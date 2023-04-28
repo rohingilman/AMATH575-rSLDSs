@@ -7,6 +7,10 @@
 
 \usepackage{packages}
 \usepackage{macros}
+\usepackage{tcolorbox}
+\usepackage{adjustbox}
+\usepackage{graphicx}
+
 
 \title[RSLDS]{\small Bayesian Learning and Inference \\ in Recurrent Switching Linear Dynamical Systems}
 %\subtitle{Subtitle}
@@ -41,17 +45,63 @@
 
 \section{Model}
 
-\begin{frame}{Background}{Frame Subtitle}
-        Daran
+\begin{frame}{Model}{SLDS and rSLDS}
+
+\begin{tcolorbox}[colback=blue!10!white,colframe=blue!50!black,title=Model Set-up,boxrule=2pt, boxsep=0.1em, left=0.1em, right=0.1em,
+fontupper=\fontsize{8}{10}\selectfont] %,height=2in
+\begin{enumerate}[\textbullet]
+\item Observation $y_t=C x_t+d+w_t\text{, }w_t \overset{\mathrm{iid}}{\sim} \mathcal{N}(0,S)$
+\item Continous latent state $x_{t+1}=A_{z_{t+1}}x_t+b_{z_{t+1}}+\nu_t \text{, } \nu_t \overset{\mathrm{iid}}{\sim} \mathcal{N}(0,Q_{z_{t+1}})$
+    \item Discrete latent state $z_t \in \{1,\dots,K\}$
+        \begin{itemize}
+            \item SLDS 
+$z_{t+1} | z_t \sim \pi_{z_t}$
+            \item rSLDS
+ $z_{t+1} | z_t, x_t \sim \pi_{SB}(v_{t+1})$, $v_{t+1}=R_{z_t}x_t+r_{z_t}$
+        \end{itemize}
+\end{enumerate}
+\end{tcolorbox}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{gallery/model_p1.pdf}
+    \caption{}
+  \end{figure}
+
+
+
+%\begin{figure}
+%    \centering
+%    \includegraphics[scale=0.3]{gallery/z_on_x.pdf}
+%    \caption{Dependence of $z_{t+1}$ on $x_t$}
+%    \label{rLSDS}
+%\end{figure}
+%\begin{figure}
+%    \centering
+%    \includegraphics[scale=0.3]{gallery/rSLDS.pdf}
+%    \caption{Graphical Model for the rSLDS}
+%    \label{rLSDS}
+%\end{figure}
 
     \end{frame}
 
-\begin{frame}{rSLDS}{Frame Subtitle}
-        Daran
+\begin{frame}{Model}{Stick Breaking Logitstic Regression}
+       \begin{tcolorbox}[colback=blue!10!white,colframe=blue!50!black,title=Stick Breaking Logitstic Regression,boxrule=2pt, boxsep=0.1em, left=0.1em, right=0.1em,
+fontupper=\fontsize{8}{10}\selectfont] %,height=2in
+\begin{enumerate}[\textbullet]
+\item
+\item 
+    \item 
+        \begin{itemize}
+            \item 
+            \item
+        \end{itemize}
+\end{enumerate}
+\end{tcolorbox}
 
     \end{frame}
 
-\begin{frame}{Inference}{Frame Subtitle}
+\begin{frame}{Model}{Inference}
         Daran
 
     \end{frame}

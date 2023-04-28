@@ -11,7 +11,7 @@
 \usepackage{adjustbox}
 \usepackage{graphicx}
 \usepackage{bbm}
-
+\usepackage{xcolor}
 
 
 \title[RSLDS]{\small Bayesian Learning and Inference \\ in Recurrent Switching Linear Dynamical Systems}
@@ -47,9 +47,9 @@
 
 \section{Model}
 
-\begin{frame}{Model}{SLDS and rSLDS}
+\begin{frame}{Model}%{SLDS and rSLDS}
 
-\begin{tcolorbox}[colback=blue!10!white,colframe=blue!50!black,title=Model Set-up,boxrule=2pt, boxsep=0.1em, left=0.1em, right=0.1em,
+\begin{tcolorbox}[colback=blue!10!white,colframe=blue!50!black,title=SLDS and rSLDS,boxrule=2pt, boxsep=0.1em, left=0.1em, right=0.1em,
 fontupper=\fontsize{8}{10}\selectfont] %,height=2in
 \begin{enumerate}[\textbullet]
 \item Observation $y_t=C x_t+d+w_t\text{, }w_t \overset{\mathrm{iid}}{\sim} \mathcal{N}(0,S)$
@@ -66,7 +66,7 @@ $z_{t+1} | z_t \sim \pi_{z_t}$
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\linewidth]{gallery/model_p1.pdf}
+    \includegraphics[width=0.8\linewidth]{gallery/model_p1.pdf}
     \caption{}
   \end{figure}
 
@@ -87,33 +87,56 @@ $z_{t+1} | z_t \sim \pi_{z_t}$
 
     \end{frame}
 
-\begin{frame}{Model}{Stick Breaking Logitstic Regression}
-       \begin{tcolorbox}[colback=blue!10!white,colframe=blue!50!black,title=??????? ,boxrule=2pt, boxsep=0.1em, left=0.1em, right=0.1em,
+\begin{frame}{Model}%{Stick Breaking Logitstic Regression}
+       \begin{tcolorbox}[colback=blue!10!white,colframe=blue!50!black,title=Stick Breaking Logitstic Regression ,boxrule=2pt, boxsep=0.1em, left=0.1em, right=0.1em,
 fontupper=\fontsize{8}{10}\selectfont] %,height=2in
 \begin{enumerate}[\textbullet]
 
 \item $p(z|x) \sim \pi_{SB}(\nu),\text{ } \nu=Rx+r$
-\item Link function: $\pi_{SB}(\nu)=\left( \pi_{SB}^{(1)}(\nu),\dots,\pi_{SB}^{(K)}(\nu) \right)$ \\
+\item Link function: $\pi_{SB}(\nu)=\left( \pi_{SB}^{(1)}(\nu),\dots,\pi_{SB}^{(K)}(\nu) \right)$ (with $\sigma(x)=\frac{e^x}{1+e^x}$)\\
+%\sigma(\nu_k) \prod_{j<k}\left(1- \sigma(\nu_j)\right)=
 $\pi_{SB}^{(k)}(\nu)=\begin{cases}
-    \sigma(\nu_k) \prod_{j<k}\left(1- \sigma(\nu_j)\right)=\sigma(\nu_k) \prod_{j<k}\sigma(-\nu_j),& \text{if } k=1,\dots,K-1\\
+    \sigma(\nu_k) \prod_{j<k}\sigma(-\nu_j),& \text{if } k=1,\dots,K-1\\
     \prod_{1}^K \sigma(-\nu_j),              & \text{if} k=K
 \end{cases}$\\
-$\sigma(x)=\frac{e^x}{1+e^x}$
+
 \item 
-$p(z|x) \sim \prod _{k=1}^K \sigma(\nu_k)^{\mathbbm{1} [z=k]} \sigma(-\nu_k)^{\mathbbm{1} [z>k]}$ (Likelihood),
-\item Prior $p(x) \sim \mathcal{N} $
-\item Posterior $p(x|z)$ is non-Gaussian
-\begin{itemize}
-            \item need to do MCMC
-            \item 
-        \end{itemize}
+$p(z|x) \sim \prod _{k=1}^K \sigma(\nu_k)^{\mathbbm{1} [z=k]} \sigma(-\nu_k)^{\mathbbm{1} [z>k]}$ (Likelihood)
 \end{enumerate}
 \end{tcolorbox}
+\begin{enumerate}[\textbullet]
+\item With a Gaussian Prior $p(x)$, the posterior $p(x|z)\propto p(x)*p(z|x)$ is non-Gaussian
+\item Bayesian updating is not efficient
+\begin{itemize}
+            \item Gibbs Sampler: sampling $x^{(i+1)} \sim p(x|z=z^{(i)})$, sampling $z^{(i+1)} \sim p(z|x=x^{(i+1)})$			
+            \item Message Passing
+$
+m_{t \rightarrow \left(t+1\right)}(x_{t+1})=\int \psi\left(x_{t}, y_{t}\right) \textcolor{blue}{\psi\left(x_{t}, z_{t+1}\right)} \psi\left(x_{t}, x_{t+1}, z_{t+1}\right) m_{\left(t-1\right) \rightarrow t}\left(x_{t}\right) \mathrm{d} x_{t}
+$
+\end{itemize}
+\end{enumerate}
+
 
     \end{frame}
 
-\begin{frame}{Model}{Inference}
-        Daran
+\begin{frame}{Model}%{Inference}
+        \begin{tcolorbox}[colback=blue!10!white,colframe=blue!50!black,title=Polya-gamma augmentation ,boxrule=2pt, boxsep=0.1em, left=0.1em, right=0.1em,
+fontupper=\fontsize{8}{10}\selectfont]
+
+\begin{align}
+\textcolor{blue}{ \frac{\left(e^{\nu}\right)^{a}}{\left(1+e^{\nu}\right)^{b}} } &=2^{-b}  \int_{0}^{\infty} \boldsymbol{e^{\kappa \nu} e^{-\omega \nu^{2} / 2} }\textcolor{red} {  p_{\text {PG }}(\omega \mid b, 0) }\mathrm{d} \omega \text{ }(\kappa=a-\frac{b}{2})\\
+p(x_{t}|z_{t+1}) &\propto \prod_{k=1}^{K-1} \textcolor{blue}{  \frac{\left(e^{\nu_{t+1, k}}\right)^{\mathbb{I}\left[z_{t+1}=k\right]}}{\left(1+e^{\nu_{t+1, k}}\right)^{\mathbb{I}\left[z_{t+1} \geq k\right]}} }\\
+p(x_t|z_{t+1})&=\int p(x_t,\omega_t|z_{t+1})  \mathrm{d}\omega_t=\int   \boldsymbol{ p(x_t|z_{t+1},\omega_t) }\textcolor{red}{ p(\omega_t) } \mathrm{d}\omega_t  \\
+\omega_{t, k} \mid x_{t}, z_{t+1} &\sim \operatorname{PG}\left(\mathbb{I}\left[z_{t+1} \geq k\right], \nu_{t+1, k}\right) 
+\end{align}
+
+\end{tcolorbox}
+\begin{itemize}
+\item $p(x_t|z_{t+1},\omega_t)$ is Gaussian 
+\item Message Passing $\psi(x_t,z_{t+1},\omega_t) \propto \mathcal{N}(\nu_{t+1}|\Omega^{-1}_t \kappa_{t+1},\Omega^{-1}_t)$
+\item Thus instantiating these auxiliary variables in a Gibbs
+sampler enables efficient block updates
+\end{itemize}
 
     \end{frame}
 

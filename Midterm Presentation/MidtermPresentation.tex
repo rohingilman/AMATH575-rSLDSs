@@ -10,6 +10,8 @@
 \usepackage{tcolorbox}
 \usepackage{adjustbox}
 \usepackage{graphicx}
+\usepackage{bbm}
+
 
 
 \title[RSLDS]{\small Bayesian Learning and Inference \\ in Recurrent Switching Linear Dynamical Systems}
@@ -57,7 +59,7 @@ fontupper=\fontsize{8}{10}\selectfont] %,height=2in
             \item SLDS 
 $z_{t+1} | z_t \sim \pi_{z_t}$
             \item rSLDS
- $z_{t+1} | z_t, x_t \sim \pi_{SB}(v_{t+1})$, $v_{t+1}=R_{z_t}x_t+r_{z_t}$
+ $z_{t+1} | z_t, x_t \sim \pi_{SB}(\nu_{t+1})$, $\nu_{t+1}=R_{z_t}x_t+r_{z_t}$
         \end{itemize}
 \end{enumerate}
 \end{tcolorbox}
@@ -86,15 +88,24 @@ $z_{t+1} | z_t \sim \pi_{z_t}$
     \end{frame}
 
 \begin{frame}{Model}{Stick Breaking Logitstic Regression}
-       \begin{tcolorbox}[colback=blue!10!white,colframe=blue!50!black,title=Stick Breaking Logitstic Regression,boxrule=2pt, boxsep=0.1em, left=0.1em, right=0.1em,
+       \begin{tcolorbox}[colback=blue!10!white,colframe=blue!50!black,title=??????? ,boxrule=2pt, boxsep=0.1em, left=0.1em, right=0.1em,
 fontupper=\fontsize{8}{10}\selectfont] %,height=2in
 \begin{enumerate}[\textbullet]
-\item
+
+\item $p(z|x) \sim \pi_{SB}(\nu),\text{ } \nu=Rx+r$
+\item Link function: $\pi_{SB}(\nu)=\left( \pi_{SB}^{(1)}(\nu),\dots,\pi_{SB}^{(K)}(\nu) \right)$ \\
+$\pi_{SB}^{(k)}(\nu)=\begin{cases}
+    \sigma(\nu_k) \prod_{j<k}\left(1- \sigma(\nu_j)\right)=\sigma(\nu_k) \prod_{j<k}\sigma(-\nu_j),& \text{if } k=1,\dots,K-1\\
+    \prod_{1}^K \sigma(-\nu_j),              & \text{if} k=K
+\end{cases}$\\
+$\sigma(x)=\frac{e^x}{1+e^x}$
 \item 
-    \item 
-        \begin{itemize}
+$p(z|x) \sim \prod _{k=1}^K \sigma(\nu_k)^{\mathbbm{1} [z=k]} \sigma(-\nu_k)^{\mathbbm{1} [z>k]}$ (Likelihood),
+\item Prior $p(x) \sim \mathcal{N} $
+\item Posterior $p(x|z)$ is non-Gaussian
+\begin{itemize}
+            \item need to do MCMC
             \item 
-            \item
         \end{itemize}
 \end{enumerate}
 \end{tcolorbox}

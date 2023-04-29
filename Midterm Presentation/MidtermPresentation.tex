@@ -56,9 +56,9 @@ fontupper=\fontsize{8}{10}\selectfont] %,height=2in
 \item Continous latent state $x_{t+1}=A_{z_{t+1}}x_t+b_{z_{t+1}}+\nu_t \text{, } \nu_t \overset{\mathrm{iid}}{\sim} \mathcal{N}(0,Q_{z_{t+1}})$
     \item Discrete latent state $z_t \in \{1,\dots,K\}$
         \begin{itemize}
-            \item SLDS 
+            \item SLDS {\cite{Ackerson&Fu}}
 $z_{t+1} | z_t \sim \pi_{z_t}$
-            \item rSLDS
+            \item rSLDS {\cite{Barber}}
  $z_{t+1} | z_t, x_t \sim \pi_{SB}(\nu_{t+1})$, $\nu_{t+1}=R_{z_t}x_t+r_{z_t}$
         \end{itemize}
 \end{enumerate}
@@ -88,7 +88,7 @@ $z_{t+1} | z_t \sim \pi_{z_t}$
     \end{frame}
 
 \begin{frame}{Model}%{Stick Breaking Logitstic Regression}
-       \begin{tcolorbox}[colback=blue!10!white,colframe=blue!50!black,title=Stick Breaking Logitstic Regression ,boxrule=2pt, boxsep=0.1em, left=0.1em, right=0.1em,
+       \begin{tcolorbox}[colback=blue!10!white,colframe=blue!50!black,title=Stick Breaking Logitstic Regression \cite{linderman2015dependent},boxrule=2pt, boxsep=0.1em, left=0.1em, right=0.1em,
 fontupper=\fontsize{8}{10}\selectfont] %,height=2in
 \begin{enumerate}[\textbullet]
 
@@ -120,7 +120,7 @@ $
     \end{frame}
 
 \begin{frame}{Model}%{Inference}
-        \begin{tcolorbox}[colback=blue!10!white,colframe=blue!50!black,title=Polya-gamma augmentation ,boxrule=2pt, boxsep=0.1em, left=0.1em, right=0.1em,
+        \begin{tcolorbox}[colback=blue!10!white,colframe=blue!50!black,title=Polya-gamma augmentation\cite{linderman2015dependent},boxrule=2pt, boxsep=0.1em, left=0.1em, right=0.1em,
 fontupper=\fontsize{8}{10}\selectfont]
 
 \begin{align}
@@ -242,8 +242,11 @@ sampler enables efficient block updates
 
 \section{Bibliography}
 
-    \nocite{einstein, knuthwebsite, latexcompanion}
-    
+    \nocite{Ackerson&Fu}
+    \nocite{Barber}
+	\nocite{linderman2015dependent}
+
+
     \begin{frame}{Bibliography}
         \bibliographystyle{plain}
         \bibliography{bibliography_file}

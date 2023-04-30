@@ -59,8 +59,8 @@
 \begin{tcolorbox}[colback=blue!10!white,colframe=blue!50!black,title=SLDS and rSLDS,boxrule=2pt, boxsep=0.1em, left=0.1em, right=0.1em,
 fontupper=\fontsize{8}{10}\selectfont] %,height=2in
 \begin{enumerate}[\textbullet]
-\item Observation $y_t=C x_t+d+w_t\text{, }w_t \overset{\mathrm{iid}}{\sim} \mathcal{N}(0,S)$
 \item Continous latent state $x_{t+1}=A_{z_{t+1}}x_t+b_{z_{t+1}}+\nu_t \text{, } \nu_t \overset{\mathrm{iid}}{\sim} \mathcal{N}(0,Q_{z_{t+1}})$
+\item Observation $y_t=C x_t+d+w_t\text{, }w_t \overset{\mathrm{iid}}{\sim} \mathcal{N}(0,S)$
     \item Discrete latent state $z_t \in \{1,\dots,K\}$
         \begin{itemize}
             \item SLDS {\cite{Ackerson&Fu}}

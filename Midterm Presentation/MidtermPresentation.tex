@@ -126,10 +126,10 @@ $p(z|x) \sim \prod _{k=1}^K \sigma(\nu_k)^{\mathbbm{1} [z=k]} \sigma(-\nu_k)^{\m
 \item Bayesian updating is not efficient
 \begin{itemize}
             \item Gibbs Sampler: sampling $x^{(i+1)} \sim p(x|z=z^{(i)})$, sampling $z^{(i+1)} \sim p(z|x=x^{(i+1)})$			
-            \item Message Passing
-$
-m_{t \rightarrow \left(t+1\right)}(x_{t+1})=\int \psi\left(x_{t}, y_{t}\right) \textcolor{blue}{\psi\left(x_{t}, z_{t+1}\right)} \psi\left(x_{t}, x_{t+1}, z_{t+1}\right) m_{\left(t-1\right) \rightarrow t}\left(x_{t}\right) \mathrm{d} x_{t}
-$
+
+%            \item Message Passing
+%$m_{t \rightarrow \left(t+1\right)}(x_{t+1})=\int \psi\left(x_{t}, y_{t}\right) \textcolor{blue}{\psi\left(x_{t}, z_{t+1}\right)} \psi\left(x_{t}, x_{t+1}, z_{t+1}\right) m_{\left(t-1\right) \rightarrow t}\left(x_{t}\right) \mathrm{d} x_{t}$
+
 \end{itemize}
 \end{enumerate}
 
@@ -150,7 +150,7 @@ p(x_t|z_{t+1})&=\int p(x_t,\omega_t|z_{t+1})  \mathrm{d}\omega_t=\int   \boldsym
 \end{tcolorbox}
 \begin{itemize}
 \item $p(x_t|z_{t+1},\omega_t)$ is Gaussian 
-\item Message Passing $\psi(x_t,z_{t+1},\omega_t) \propto \mathcal{N}(\nu_{t+1}|\Omega^{-1}_t \kappa_{t+1},\Omega^{-1}_t)$
+%\item Message Passing $\psi(x_t,z_{t+1},\omega_t) \propto \mathcal{N}(\nu_{t+1}|\Omega^{-1}_t \kappa_{t+1},\Omega^{-1}_t)$
 \item Thus instantiating these auxiliary variables in a Gibbs
 sampler enables efficient block updates
 \end{itemize}

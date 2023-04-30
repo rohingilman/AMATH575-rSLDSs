@@ -1,7 +1,7 @@
 PWD c:\Users\Rohin Gilman\Documents\GitHub\AMATH575-rSLDSs\Midterm Presentation
 INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Rohin Gilman\Documents\GitHub\AMATH575-rSLDSs\Midterm Presentation\Midterm Presentation.tex
-OUTPUT Midterm Presentation.log
+INPUT c:\Users\Rohin Gilman\Documents\GitHub\AMATH575-rSLDSs\Midterm Presentation\MidtermPresentation.tex
+OUTPUT MidtermPresentation.log
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\beamer\beamer.cls
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\beamer\beamer.cls
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\beamer\beamer.cls
@@ -1048,7 +1048,7 @@ INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\beamer\beame
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\beamer\beamerinnerthemedefault.sty
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\beamer\beamerinnerthemedefault.sty
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\beamer\beamericonbook.pdf
-OUTPUT Midterm Presentation.pdf
+OUTPUT MidtermPresentation.pdf
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\beamer\beamericonbook.pdf
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\beamer\beamericonbook.pdf
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\beamer\beamericonbook.20.pdf
@@ -1510,6 +1510,137 @@ INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\ams
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\amscls\amsthm.sty
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\esint\esint.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcolorbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcolorbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcolorbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcolorbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcolorbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcolorbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcolorbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcolorbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcolorbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcolorbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcolorbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\pgf\basiclayer\pgf.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\tools\verbatim.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\environ\environ.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\environ\environ.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\environ\environ.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\environ\environ.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\environ\environ.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\environ\environ.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\environ\environ.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\environ\environ.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\environ\environ.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\environ\environ.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\environ\environ.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\trimspaces\trimspaces.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\trimspaces\trimspaces.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\trimspaces\trimspaces.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\trimspaces\trimspaces.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\trimspaces\trimspaces.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\trimspaces\trimspaces.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\trimspaces\trimspaces.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\trimspaces\trimspaces.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\trimspaces\trimspaces.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\trimspaces\trimspaces.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\trimspaces\trimspaces.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjustbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjustbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjustbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjustbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjustbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjustbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjustbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjustbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjustbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjustbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjustbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\generic\xkeyval\xkeyval.tex
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\generic\xkeyval\xkvutils.tex
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjcalc.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjcalc.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjcalc.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjcalc.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjcalc.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjcalc.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjcalc.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjcalc.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjcalc.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjcalc.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjcalc.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\trimclip.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\trimclip.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\trimclip.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\trimclip.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\trimclip.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\trimclip.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\trimclip.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\trimclip.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\trimclip.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\trimclip.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\trimclip.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\collectbox\collectbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\collectbox\collectbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\collectbox\collectbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\collectbox\collectbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\collectbox\collectbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\collectbox\collectbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\collectbox\collectbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\collectbox\collectbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\collectbox\collectbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\collectbox\collectbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\collectbox\collectbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\adjcalc.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\tc-pdftex.def
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\tc-pdftex.def
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\tc-pdftex.def
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\adjustbox\tc-pdftex.def
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\collectbox\collectbox.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\varwidth\varwidth.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\varwidth\varwidth.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\varwidth\varwidth.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\bbm\bbm.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\bbm\bbm.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\bbm\bbm.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\bbm\bbm.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\bbm\bbm.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\bbm\bbm.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\bbm\bbm.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\bbm\bbm.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\bbm\bbm.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\bbm\bbm.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\bbm\bbm.sty
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
@@ -1521,10 +1652,10 @@ INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT .\Midterm Presentation.aux
-INPUT Midterm Presentation.aux
-INPUT Midterm Presentation.aux
-OUTPUT Midterm Presentation.aux
+INPUT .\MidtermPresentation.aux
+INPUT MidtermPresentation.aux
+INPUT MidtermPresentation.aux
+OUTPUT MidtermPresentation.aux
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -1605,9 +1736,9 @@ INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\translator\t
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\translator\translator-theorem-dictionary-English.dict
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\translator\translator-theorem-dictionary-English.dict
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\translator\translator-theorem-dictionary-English.dict
-INPUT .\Midterm Presentation.nav
-INPUT Midterm Presentation.nav
-INPUT Midterm Presentation.nav
+INPUT .\MidtermPresentation.nav
+INPUT MidtermPresentation.nav
+INPUT MidtermPresentation.nav
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecss0600.tfm
 INPUT .\uw_theme_images\stacked_uw.png
 INPUT .\uw_theme_images\stacked_uw.png
@@ -1618,6 +1749,40 @@ INPUT .\uw_theme_images\stacked_uw.png
 INPUT .\uw_theme_images\stacked_uw.png
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecss0800.tfm
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0800.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecss1200.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1200.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecss2074.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecsx2074.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx2074.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1000.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1728.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1728.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0900.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecss0500.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT .\Figures\\fig1.png
+INPUT .\Figures\\fig1.png
+INPUT Figures\\fig1.png
+INPUT .\Figures\\fig1.png
+INPUT .\Figures\\fig1.png
+INPUT .\Figures\\fig1.png
+INPUT .\Figures\\fig1.png
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecss1000.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecss1440.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecsx1440.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm
+INPUT .\uw_theme_images\small_uw_logo.png
+INPUT .\uw_theme_images\small_uw_logo.png
+INPUT uw_theme_images\small_uw_logo.png
+INPUT .\uw_theme_images\small_uw_logo.png
+INPUT .\uw_theme_images\small_uw_logo.png
+INPUT .\uw_theme_images\small_uw_logo.png
+INPUT .\uw_theme_images\small_uw_logo.png
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmss.fd
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmss.fd
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmss.fd
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmss.fd
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcss0800.tfm
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss8.tfm
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss8.tfm
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss8.tfm
@@ -1677,76 +1842,7 @@ INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\sansm
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\sansmathaccent\mathkerncmssxi8.tfm
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecss0500.tfm
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0600.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecss1200.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1200.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecss2074.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecsx2074.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx2074.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1728.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1728.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss12.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint10.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\sansmathaccent\mathkerncmssi12.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\sansmathaccent\mathkerncmssxi12.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0900.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecss0500.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT .\Midterm Presentation.toc
-INPUT Midterm Presentation.toc
-INPUT Midterm Presentation.toc
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecsx1200.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1200.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecss1440.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecsx1440.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT uw_theme_images\small_uw_logo.png
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT uw_theme_images\small_uw_logo.png
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT uw_theme_images\small_uw_logo.png
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint10.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\sansmathaccent\mathkerncmssi10.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\sansmathaccent\mathkerncmssxi10.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecsi1095.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecsx1095.tfm
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1095.tfm
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT uw_theme_images\small_uw_logo.png
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecss1000.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0500.tfm
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss10.tfm
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss8.tfm
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
@@ -1769,6 +1865,74 @@ INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfo
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\sansmathaccent\mathkerncmssxi10.tfm
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\sansmathaccent\mathkerncmssxi8.tfm
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecss0700.tfm
+INPUT .\gallery\model_p1.pdf
+INPUT .\gallery\model_p1.pdf
+INPUT gallery\model_p1.pdf
+INPUT .\gallery\model_p1.pdf
+INPUT .\gallery\model_p1.pdf
+INPUT .\gallery\model_p1.pdf
+INPUT .\uw_theme_images\small_uw_logo.png
+INPUT .\uw_theme_images\small_uw_logo.png
+INPUT uw_theme_images\small_uw_logo.png
+INPUT .\uw_theme_images\small_uw_logo.png
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\bbm\ubbm.fd
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\bbm\ubbm.fd
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\bbm\ubbm.fd
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\tex\latex\bbm\ubbm.fd
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\tfm\public\bbm\bbm8.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\tfm\public\bbm\bbm6.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\tfm\public\bbm\bbm5.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcss1095.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint10.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\sansmathaccent\mathkerncmssi10.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\sansmathaccent\mathkerncmssxi10.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1000.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0700.tfm
+INPUT .\uw_theme_images\small_uw_logo.png
+INPUT .\uw_theme_images\small_uw_logo.png
+INPUT uw_theme_images\small_uw_logo.png
+INPUT .\uw_theme_images\small_uw_logo.png
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmssbx10.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmssbx10.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmssbx10.tfm
+INPUT .\uw_theme_images\small_uw_logo.png
+INPUT .\uw_theme_images\small_uw_logo.png
+INPUT uw_theme_images\small_uw_logo.png
+INPUT .\uw_theme_images\small_uw_logo.png
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\vf\public\sansmathaccent\mathkerncmssxi8.vf
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecso0800.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\vf\public\sansmathaccent\mathkerncmssxi8.vf
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecso0800.tfm
+INPUT .\Figures\\fig2.png
+INPUT .\Figures\\fig2.png
+INPUT Figures\\fig2.png
+INPUT .\Figures\\fig2.png
+INPUT .\Figures\\fig2.png
+INPUT .\Figures\\fig2.png
+INPUT .\Figures\\fig2.png
+INPUT .\Figures\\fig3.png
+INPUT .\Figures\\fig3.png
+INPUT Figures\\fig3.png
+INPUT .\Figures\\fig3.png
+INPUT .\Figures\\fig3.png
+INPUT .\Figures\\fig3.png
+INPUT .\Figures\\fig3.png
+INPUT .\Figures\\fig4.png
+INPUT .\Figures\\fig4.png
+INPUT Figures\\fig4.png
+INPUT .\Figures\\fig4.png
+INPUT .\Figures\\fig4.png
+INPUT .\Figures\\fig4.png
+INPUT .\Figures\\fig4.png
 INPUT .\uw_theme_images\small_uw_logo.png
 INPUT .\uw_theme_images\small_uw_logo.png
 INPUT uw_theme_images\small_uw_logo.png
@@ -1777,62 +1941,100 @@ INPUT .\uw_theme_images\small_uw_logo.png
 INPUT .\uw_theme_images\small_uw_logo.png
 INPUT uw_theme_images\small_uw_logo.png
 INPUT .\uw_theme_images\small_uw_logo.png
+INPUT .\MidtermPresentation.bbl
+INPUT MidtermPresentation.bbl
+INPUT .\MidtermPresentation.bbl
+INPUT MidtermPresentation.bbl
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecsi1095.tfm
 INPUT .\uw_theme_images\small_uw_logo.png
 INPUT .\uw_theme_images\small_uw_logo.png
 INPUT uw_theme_images\small_uw_logo.png
 INPUT .\uw_theme_images\small_uw_logo.png
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT uw_theme_images\small_uw_logo.png
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT uw_theme_images\small_uw_logo.png
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT .\Midterm Presentation.bbl
-INPUT Midterm Presentation.bbl
-INPUT .\Midterm Presentation.bbl
-INPUT Midterm Presentation.bbl
-INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecsi0800.tfm
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT .\uw_theme_images\small_uw_logo.png
-INPUT uw_theme_images\small_uw_logo.png
-INPUT .\uw_theme_images\small_uw_logo.png
-OUTPUT Midterm Presentation.nav
-OUTPUT Midterm Presentation.toc
-OUTPUT Midterm Presentation.snm
-INPUT Midterm Presentation.aux
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsi0800.pk
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsi0800.pk
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1200.pk
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1200.pk
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1000.pk
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1000.pk
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1095.pk
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1095.pk
+OUTPUT MidtermPresentation.nav
+OUTPUT MidtermPresentation.toc
+OUTPUT MidtermPresentation.snm
+INPUT MidtermPresentation.aux
 INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsi1095.pk
 INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsi1095.pk
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss0600.pk
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss0600.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi450\ecso0800.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi450\ecso0800.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecso0800.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecso0800.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\public\esint\dpi480\esint10.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\public\esint\dpi480\esint10.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\public\esint\dpi600\esint10.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\public\esint\dpi600\esint10.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcss1095.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcss1095.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\public\bbm\dpi600\bbm6.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\public\bbm\dpi600\bbm6.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss0700.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss0700.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss0500.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss0500.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss0800.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss0800.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcss0800.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcss0800.pk
 INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1095.pk
 INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1095.pk
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss0600.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss0600.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1000.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1000.pk
 INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
 INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
 INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk
 INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk
 INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
 INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk
-INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmbsy6.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmbsy6.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmbsy8.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmbsy8.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx8.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx8.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmex8.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmex8.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi5.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi5.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmmib6.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmmib6.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmmib8.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cmextra\cmmib8.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmss10.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmss10.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmss8.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmss8.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmssbx10.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmssbx10.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmssi10.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmssi10.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmssi8.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmssi8.pfb
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm7.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm7.pfb

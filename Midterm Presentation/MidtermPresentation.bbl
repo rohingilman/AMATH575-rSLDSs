@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+
+\bibitem{Ackerson&Fu}
+Guy~A. Ackerson and King-Sun Fu.
+\newblock On state estimation in switching environments.
+\newblock {\em IEEE Transactions on Automatic Control}, 15(1):10–17, 1970.
+
+\bibitem{Barber}
+David Barber.
+\newblock Expectation correction for smoothed inference in switching linear
+  dynamical systems.
+\newblock {\em Journal of Machine Learning Research}, page 7(Nov):2515– 2540,
+  2006.
+
+\bibitem{linderman2015dependent}
+Scott~W Linderman, Matthew~J Johnson, and Ryan~P Adams.
+\newblock Dependent multinomial models made easy: Stick-breaking with the
+  polya-gamma augmentation.
+\newblock In {\em Advances in Neural Information Processing Systems}, pages
+  3438--3446, 2015.
+
+\end{thebibliography}

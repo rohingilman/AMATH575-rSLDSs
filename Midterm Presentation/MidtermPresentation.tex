@@ -19,6 +19,7 @@
 %\author{Jane Doe\inst{1} \and John Doe\inst{2}}
 \author{Charbel Abi Younes, Marvyn Bailly, Bart Boom, Rohin Gilman, Daran Xu}
 \department{Applied Mathematics}
+\date{May 1, 2023}
 %\institute{
 %    \inst{1}Very Fancy University \\
 %    \inst{2}Another Fancy University
@@ -32,16 +33,22 @@
     \maketitle
 \end{frame}
 
+\begin{comment}
 % The TOC
 \begin{frame}{Table of Contents}
     \setcounter{framenumber}{1} % Sets the TOC to be the first numbered frame
     \tableofcontents
 \end{frame}
+\end{comment}
 
 \section{Introduction and Motivation}
 
-\begin{frame}{Frame Title}{Frame Subtitle}
-        Rohin
+\begin{frame}{Introduction and Motivation}
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width=0.6\textwidth]{fig1.png}
+            \caption{NASCAR Dynamical System}
+        \end{figure}
 
     \end{frame}
 
@@ -143,18 +150,48 @@ sampler enables efficient block updates
 
 \section{Conclusion}
 
-\begin{frame}{Frame Title}{Frame Subtitle}
-        Rohin
+\begin{frame}{Conclusions}
+        \begin{itemize}
+            \item SLDS vs rSLDS
+            \begin{figure}[h!]
+                \centering
+                \begin{subfigure}[b]{0.3\textwidth}
+                    \includegraphics[width=\textwidth]{fig2.png}
+                \end{subfigure}
+                \begin{subfigure}[b]{0.3\textwidth}
+                    \includegraphics[width=\textwidth]{fig3.png}
+                \end{subfigure}
+            \end{figure}
+
+            \item Canonical Dynamical System - Lorenz Attractor
+            \begin{figure}[h!]
+                \centering
+                \includegraphics[width=0.3\textwidth]{fig4.png}
+            \end{figure}
+        \end{itemize}
 
     \end{frame}
 
 \section{Next Step}
 
-\begin{frame}{Frame Title}{Frame Subtitle}
-        Rohin
+\begin{frame}{Next Steps}
+        \begin{itemize}
+            \item Van der Pol Oscillator
+            \begin{itemize}
+                \item Canonical dynamical system with a stable limit cycle and bifurcations
+            \end{itemize}
+
+            \vspace{2em}
+
+            \item Double Pendulum
+            \begin{itemize}
+                \item System with chaotic dynamics and multiple states (depending on the relative positions of the weights)
+            \end{itemize}
+
+        \end{itemize}
 
     \end{frame}
-
+\begin{comment}
 \subsection{A Subsection}
 
     \begin{frame}{Frame Title}{Frame Subtitle}
@@ -239,6 +276,7 @@ sampler enables efficient block updates
 
         \texttt{\textbackslash pause}.
     \end{frame}
+\end{comment}
 
 \section{Bibliography}
 

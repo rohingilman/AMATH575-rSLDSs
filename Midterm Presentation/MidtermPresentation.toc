@@ -1,5 +1,5 @@
-\beamer@sectionintoc {1}{First Section}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{A Subsection}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{Another Subsection}{6}{0}{1}
-\beamer@sectionintoc {2}{Second Section}{9}{0}{2}
-\beamer@sectionintoc {3}{Bibliography}{12}{0}{3}
+\beamer@sectionintoc {1}{Introduction and Motivation}{2}{0}{1}
+\beamer@sectionintoc {2}{Model}{3}{0}{2}
+\beamer@sectionintoc {3}{Conclusion}{6}{0}{3}
+\beamer@sectionintoc {4}{Next Step}{7}{0}{4}
+\beamer@sectionintoc {5}{Bibliography}{8}{0}{5}

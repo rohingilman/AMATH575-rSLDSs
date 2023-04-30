@@ -12,6 +12,8 @@
 \usepackage{graphicx}
 \usepackage{bbm}
 \usepackage{xcolor}
+\usepackage{caption}
+
 
 
 \title[RSLDS]{\small Bayesian Learning and Inference \\ in Recurrent Switching Linear Dynamical Systems}
@@ -70,13 +72,21 @@ $z_{t+1} | z_t \sim \pi_{z_t}$
         \end{itemize}
 \end{enumerate}
 \end{tcolorbox}
+       
+
+%\begin{figure}
+    %\centering
+    %\includegraphics[width=1.2\linewidth]{gallery/z_on_x.pdf}
+    %\caption{}
+ % \end{figure}
+   
 
 \begin{figure}
-    \centering
-    \includegraphics[width=0.8\linewidth]{gallery/model_p1.pdf}
-    \caption{}
-  \end{figure}
-
+    %\captionsetup{position=top}
+	\centering
+    \includegraphics[width=1.0\linewidth]{gallery/z_on_x.png}
+	\caption{$z_t \in \{1,2,3,4,5\}, x_t \in \mathbb{R}^2$}
+\end{figure}
 
 
 %\begin{figure}

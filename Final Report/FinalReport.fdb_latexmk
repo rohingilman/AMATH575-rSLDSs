@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1682625524 "c:/Users/Rohin Gilman/Documents/GitHub/AMATH575-rSLDSs/Final Report/FinalReport.tex" "FinalReport.pdf" "FinalReport" 1682625526
+["pdflatex"] 1682986353 "c:/Users/Rohin Gilman/Documents/GitHub/AMATH575-rSLDSs/Final Report/FinalReport.tex" "FinalReport.pdf" "FinalReport" 1682986355
   "C:/Users/Rohin" 1661101895 18975 1a3d2d0bd36f14d768ac8155a708220d ""
-  "C:/Users/Rohin Gilman/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1682624917 115518 12727708efe1103296e4191777be1d34 ""
+  "C:/Users/Rohin Gilman/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1682872718 115518 12727708efe1103296e4191777be1d34 ""
   "C:/Users/Rohin Gilman/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1641425435 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/Rohin Gilman/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1641425436 684 3a51bd4fd9600428d5264cf25f04bb9a ""
   "C:/Users/Rohin Gilman/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1642977221 9773321 0fef47fcd19ee0051fda067828ada84a ""
@@ -123,7 +123,7 @@
   "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsmath.sty" 1636827942 87648 07fbb6e9169e00cb2a2f40b31b2dbf3c ""
   "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsopn.sty" 1636827943 4128 8eea906621b6639f7ba476a472036bbe ""
   "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amstext.sty" 1636827943 2444 926f379cc60fcf0c6e3fee2223b4370d ""
-  "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/base/report.cls" 1638778684 23203 8fbc410e29d3fd675970d5f9698c9c11 ""
+  "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/base/article.cls" 1638778684 20144 8a7de377ae7a11ee924a7499611f5a9d ""
   "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/base/size10.clo" 1638778684 8448 96f18c76bf608a36ee6fbf021ac1dd32 ""
   "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption.sty" 1603740596 51746 e89c4da670ba533e6ab38e045ce6d1d9 ""
   "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption3.sty" 1603740596 67929 d50ae850e1d9604065e8337a75a41029 ""
@@ -157,6 +157,7 @@
   "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgffor.sty" 1621073245 348 ee405e64380c11319f0e249fed57e6c5 ""
   "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfkeys.sty" 1621073245 274 5ae372b7df79135d240456a1c6f2cf9a ""
   "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs.sty" 1621073245 325 f9f16d12354225b7dd52a3321f085955 ""
+  "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1324297677 22913 a27d7908fc6f0385466454a966a316eb ""
   "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/tabu/tabu.sty" 1547477230 116392 98cfe11e2c593abcfc7d855738ed65af ""
   "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1636713860 12694 6c23725d50ab9d1e2d3ce482c58ffcf3 ""
   "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/tools/bm.sty" 1636713860 13197 df0fe9a9695763546b59e02a008447b3 ""
@@ -164,10 +165,10 @@
   "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/tools/verbatim.sty" 1636713860 7392 39729ae6a807e217edf1442cf8fab2c2 ""
   "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1636288472 56029 3f7889dab51d620aa43177c391b7b190 ""
-  "FinalReport.aux" 1682625526 411 ade537aac7819aff3f4a6c5ffc94c12b "pdflatex"
-  "FinalReport.tex" 1682625521 247 6d5cec602048477c94a9e1e38d53c5b2 ""
+  "FinalReport.aux" 1682986354 649 a3c6d0234776c5e99f9d6a4b44bf79cb "pdflatex"
+  "FinalReport.tex" 1682986352 893 34529c259185799e64d159a8290ce8b9 ""
   "c:/Users/Rohin" 1661101895 18975 1a3d2d0bd36f14d768ac8155a708220d ""
-  "c:/Users/Rohin Gilman/Documents/GitHub/AMATH575-rSLDSs/Final Report/FinalReport.tex" 1682625521 247 6d5cec602048477c94a9e1e38d53c5b2 ""
+  "c:/Users/Rohin Gilman/Documents/GitHub/AMATH575-rSLDSs/Final Report/FinalReport.tex" 1682986352 893 34529c259185799e64d159a8290ce8b9 ""
   "macros.sty" 1682036688 2374 ec13082f49ffc466a65b47d073b1d5c8 ""
   "packages.sty" 1682198704 879 1e5438b18daac9ba29e50cb7c2b87818 ""
   (generated)

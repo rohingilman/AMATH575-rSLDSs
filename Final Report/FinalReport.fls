@@ -797,6 +797,36 @@ INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cm
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy7.tfm
 OUTPUT FinalReport.pdf
 INPUT C:\Users\Rohin Gilman\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT .\Figures\\rSLDS_diagram.png
+INPUT .\Figures\\rSLDS_diagram.png
+INPUT Figures\\rSLDS_diagram.png
+INPUT .\Figures\\rSLDS_diagram.png
+INPUT .\Figures\\rSLDS_diagram.png
+INPUT .\Figures\\rSLDS_diagram.png
+INPUT .\Figures\\rSLDS_diagram.png
+INPUT .\Figures\\paper_fig1.png
+INPUT .\Figures\\paper_fig1.png
+INPUT Figures\\paper_fig1.png
+INPUT .\Figures\\paper_fig1.png
+INPUT .\Figures\\paper_fig1.png
+INPUT .\Figures\\paper_fig1.png
+INPUT .\Figures\\paper_fig1.png
+INPUT .\Figures\\paper_fig3.png
+INPUT .\Figures\\paper_fig3.png
+INPUT Figures\\paper_fig3.png
+INPUT .\Figures\\paper_fig3.png
+INPUT .\Figures\\paper_fig3.png
+INPUT .\Figures\\paper_fig3.png
+INPUT .\Figures\\paper_fig3.png
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
+INPUT .\Figures\\paper_fig4.png
+INPUT .\Figures\\paper_fig4.png
+INPUT Figures\\paper_fig4.png
+INPUT .\Figures\\paper_fig4.png
+INPUT .\Figures\\paper_fig4.png
+INPUT .\Figures\\paper_fig4.png
+INPUT .\Figures\\paper_fig4.png
 INPUT FinalReport.aux
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
@@ -816,6 +846,8 @@ INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\ams
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
+INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\Rohin Gilman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb

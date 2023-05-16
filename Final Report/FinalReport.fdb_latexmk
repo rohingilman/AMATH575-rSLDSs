@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1684005052 "c:/Users/Rohin Gilman/Documents/GitHub/AMATH575-rSLDSs/Final Report/FinalReport.tex" "FinalReport.pdf" "FinalReport" 1684005054
+["pdflatex"] 1684218206 "c:/Users/Rohin Gilman/Documents/GitHub/AMATH575-rSLDSs/Final Report/FinalReport.tex" "FinalReport.pdf" "FinalReport" 1684218208
   "C:/Users/Rohin" 1661101895 18975 1a3d2d0bd36f14d768ac8155a708220d ""
   "C:/Users/Rohin Gilman/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1683663786 115518 12727708efe1103296e4191777be1d34 ""
   "C:/Users/Rohin Gilman/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1641425435 688 37338d6ab346c2f1466b29e195316aa4 ""
@@ -187,12 +187,14 @@
   "Figures//paper_fig1.png" 1684004269 28508 b6b7dd3527b6b83d9dcfddb0fbfe795a ""
   "Figures//paper_fig3.png" 1684004337 22016 75a4240c8231f26162a175b2f48fde7a ""
   "Figures//paper_fig4.png" 1684004363 19302 fa8cf4fd4dabee790db3b254057db760 ""
+  "Figures//paper_fig5.png" 1684216328 55586 32eb8608e847be471c57158e0ccdd4b9 ""
+  "Figures//paper_fig6.png" 1684216180 59127 879c61cf7a4435a00db3fb7f5932e639 ""
   "Figures//rSLDS_diagram.png" 1684003170 40797 8ff036a0efc8dc27ab2f7c699e377c97 ""
-  "FinalReport.aux" 1684005054 2244 754560226d2ed6911c0dd692a0cd8e8e "pdflatex"
-  "FinalReport.tex" 1684003898 1224 3d980b270e1ea72217ce08486f6e3c8c ""
+  "FinalReport.aux" 1684218208 2452 e4c60fba6a21ac9d88200d53072d881e "pdflatex"
+  "FinalReport.tex" 1684005076 1224 3d980b270e1ea72217ce08486f6e3c8c ""
   "c:/Users/Rohin" 1661101895 18975 1a3d2d0bd36f14d768ac8155a708220d ""
-  "c:/Users/Rohin Gilman/Documents/GitHub/AMATH575-rSLDSs/Final Report/FinalReport.tex" 1684003898 1224 3d980b270e1ea72217ce08486f6e3c8c ""
-  "intro.tex" 1684005050 5327 eb27e0278fc60678627646bb458566f7 ""
+  "c:/Users/Rohin Gilman/Documents/GitHub/AMATH575-rSLDSs/Final Report/FinalReport.tex" 1684005076 1224 3d980b270e1ea72217ce08486f6e3c8c ""
+  "intro.tex" 1684218206 7408 60996498cf99c6c8ccc9f1154c85b032 ""
   "macros.sty" 1682036688 2374 ec13082f49ffc466a65b47d073b1d5c8 ""
   "packages.sty" 1682198704 879 1e5438b18daac9ba29e50cb7c2b87818 ""
   (generated)

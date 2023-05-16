@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.23)  15 MAY 2023 23:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2022.1.23)  15 MAY 2023 23:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -672,7 +672,7 @@ Package pdftex.def Info: ./Figures//paper_fig6.png  used on input line 82.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3 <./Figures//paper_fig1.png> <./Figures//paper_fig3.png> <./Figures//paper_fig4.png>]) [4 <./Figures//paper_fig5.png> <./Figures//paper_fig6.png>] (FinalReport.aux) ) 
+[3 <./Figures//paper_fig1.png> <./Figures//paper_fig3.png> <./Figures//paper_fig4.png>]) [4 <./Figures//paper_fig5.png> <./Figures//paper_fig6.png>] [5] (FinalReport.aux) ) 
 Here is how much of TeX's memory you used:
  21402 strings out of 478659
  447773 string characters out of 2842566
@@ -682,9 +682,9 @@ Here is how much of TeX's memory you used:
  1302 hyphenation exceptions out of 8191
  99i,8n,103p,1045b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on FinalReport.pdf (4 pages, 312692 bytes).
+Output written on FinalReport.pdf (5 pages, 314912 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
+ 99 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

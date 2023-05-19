@@ -104,7 +104,7 @@ The key difference between an SLDS and an rSLDS is in the update of the  discret
 
 \textcolor{blue}{be aware, the stickbreaking is here!}
 
-In the model proposed by the paper, the discrete states $z_{t}$ are generated as
+In the proposed model in the paper, the generation of discrete states $z_{t}$ follows:
 $$
 \begin{aligned}
 z_{t+1} \mid z_{t}, x_{t},\left\{R_{k}, r_{k}\right\} & \sim \pi_{\mathrm{SB}}\left(\nu_{t+1}\right), \\
@@ -112,7 +112,7 @@ z_{t+1} \mid z_{t}, x_{t},\left\{R_{k}, r_{k}\right\} & \sim \pi_{\mathrm{SB}}\l
 \end{aligned}
 $$
 
-where $R_{k} \in \mathbb{R}^{K-1 \times M}$ is a weight matrix that specifies the recurrent dependencies and $r_{k} \in \mathbb{R}^{K-1}$ is a bias that captures the Markov dependence of $z_{t+1}$ on $z_{t}$. And $\pi_{\mathrm{SB}}: \mathbb{R}^{K-1} \rightarrow[0,1]^{K}$ maps a real vector to a normalized probability vector via the stick-breaking process
+where $R_{k} \in \mathbb{R}^{K-1 \times M}$ represents a weight matrix that specifies the recurrent dependencies, and $r_{k} \in \mathbb{R}^{K-1}$ is a bias that captures the Markov dependence of $z_{t+1}$ on $z_{t}$. The function $\pi_{\mathrm{SB}}: \mathbb{R}^{K-1} \rightarrow[0,1]^{K}$ maps a real vector to a normalized probability vector using the stick-breaking process, defined as follows:
 $$
 \begin{gathered}
 \pi_{\mathrm{SB}}(\nu)=\left(\begin{array}{lll}
@@ -121,7 +121,7 @@ $$
 \pi_{\mathrm{SB}}^{(k)}(\nu)=\sigma\left(\nu_{k}\right) \prod_{j<k}\left(1-\sigma\left(\nu_{j}\right)\right)=\sigma\left(\nu_{k}\right) \prod_{j<k} \sigma\left(-\nu_{j}\right),
 \end{gathered}
 $$
-for $k=1,2, \ldots, K-1$ and $\pi_{\mathrm{SB}}^{(K)}(\nu)=\prod_{k=1}^{K} \sigma\left(-\nu_{k}\right)$, where $\sigma(x)=e^{x} /\left(1+e^{x}\right)$ denotes the logistic function. The remainder of the rSLDS generative process follows that of the SLDS. 
+for $k=1,2, \ldots, K-1$ and $\pi_{\mathrm{SB}}^{(K)}(\nu)=\prod_{k=1}^{K} \sigma\left(-\nu_{k}\right)$, where $\sigma(x)=e^{x} /\left(1+e^{x}\right)$ denotes the logistic function. The rest of the generative process of the rSLDS follows that of the SLDS. 
 
 \subsection{Fitting rSLDSs} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -133,42 +133,35 @@ for $k=1,2, \ldots, K-1$ and $\pi_{\mathrm{SB}}^{(K)}(\nu)=\prod_{k=1}^{K} \sigm
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The fitting process is similar to SLDS, with the help of Gibbs sampler. However, during the message passing stage, the message from time $t$ to time $t+1$, denoted $m_{t \rightarrow t+1}\left(x_{t+1}\right)$, is computed via
+Similar to SLDS, The fitting process of rSLDS is based on the Gibbs sampler. However, during the message passing stage, the message from time $t$ to time $t+1$, denoted $m_{t \rightarrow t+1}\left(x_{t+1}\right)$, is computed via
 
 $$
 \int \psi\left(x_{t}, y_{t}\right) \psi\left(x_{t}, z_{t+1}\right) \psi\left(x_{t}, x_{t+1}, z_{t+1}\right) m_{t-1 \rightarrow t}\left(x_{t}\right) \mathrm{d} x_{t}
 $$ 
-where $\psi\left(x_{t}, z_{t+1}\right)$ is included due to the introduced dependence of $z_{t+1}$ on $x_t$.
+where the inclusion of $\psi\left(x_{t}, z_{t+1}\right)$ accounts for the introduced dependence of $z_{t+1}$ on $x_t$.
 
-With the the stick-breaking function defined above, one can derive the probability mass function $p(z \mid x)=\prod_{k=1}^{K} \sigma\left(\nu_{k}\right)^{\mathbb{I}[z=k]} \sigma\left(-\nu_{k}\right)^{\mathbb{[}[z>k]}
-$, where $\mathbb{I}[\cdot]$ denotes an indicator function that takes value 1 when its argument is true and 0 otherwise. Therefore, the conditional distribution is non-Gaussian and the potential $\psi\left(x_{t}, z_{t+1}\right)$ is not a linear Gaussian factor. Thus, the integral in the message computation is not available in closed form and the sampling of the latent continuous states breaks down.
+With the previously defined stick-breaking function, one can derive the probability mass function $p(z \mid x)=\prod_{k=1}^{K} \sigma\left(\nu_{k}\right)^{\mathbb{I}[z=k]} \sigma\left(-\nu_{k}\right)^{\mathbb{[}[z>k]}
+$, where $\mathbb{I}[\cdot]$ denotes an indicator function that takes value 1 when its argument is true and 0 otherwise. Therefore, the conditional distribution is non-Gaussian and the potential $\psi\left(x_{t}, z_{t+1}\right)$ is not a linear Gaussian factor. Thus, the integral in the message computation is not available in closed form, which makes the sampling of the latent continuous states challenging. In this paper, the Polya-gamma augmentation (\textcolor{red}{cite the polya-gamma trick here}) is used, which introduces an auxiliary variable.
 
-Here the paper uses the Polya-gamma augmentation (\textcolor{red}{cite the polya-gamma trick here}), by introducing an auxiliary variable in such a way that the resulting marginal leaves the original model intact. According to the stick breaking mapping, the non-Gaussian factor is
-$\psi\left(x_{t}, z_{t+1}\right)=\prod_{k=1}^{K} \sigma\left(\nu_{t+1, k}\right)^{\mathbb{I}\left[z_{t+1}=k\right]} \sigma\left(-\nu_{t+1, k}\right)^{\mathbb{[}\left[z_{t+1}>k\right]}$, where  $\nu_{t+1}$ is linear in $x_{t}$, and $\nu_{t+1, k}$ is the $k$-th dimension of $\nu_{t+1}$.  Expanding the definition of the logistic function, we have
-
+According to the stick breaking mapping, the non-Gaussian factor is
+$$\psi\left(x_{t}, z_{t+1}\right)=\prod_{k=1}^{K} \sigma\left(\nu_{t+1, k}\right)^{\mathbb{I}\left[z_{t+1}=k\right]} \sigma\left(-\nu_{t+1, k}\right)^{\mathbb{[}\left[z_{t+1}>k\right]}$$ where  $\nu_{t+1}$ is linear in $x_{t}$, and $\nu_{t+1, k}$ is the $k$-th dimension of $\nu_{t+1}$.  Expanding the definition of the logistic function, we have
 $$
 \psi\left(x_{t}, z_{t+1}\right)=\prod_{k=1}^{K-1} \frac{\left(e^{\nu_{t+1, k}}\right)^{\mathbb{I}\left[z_{t+1}=k\right]}}{\left(1+e^{\nu_{t+1, k}}\right)^{\mathbb{I}\left[z_{t+1} \geq k\right]}} \quad (*)
 $$
-
-There is an integral identity for polya-gamma distribution:
+An integral identity exists for polya-gamma distribution, given by:
 $$
 \frac{\left(e^{\nu}\right)^{a}}{\left(1+e^{\nu}\right)^{b}}=2^{-b} e^{\kappa \nu} \int_{0}^{\infty} e^{-\omega \nu^{2} / 2} p_{\mathrm{PG}}(\omega \mid b, 0) \mathrm{d} \omega \quad(**)
 $$
 where $\kappa=a-b / 2$ and $p_{\mathrm{PG}}(\omega \mid b, 0)$ is the density of the Pólya-gamma distribution, PG $(b, 0)$, which does not depend on $\nu$.   
 
-Notice that the right hand side of (**) is in the same form of the left hand side of (*),...
+Notice that the right hand side of (**) exhibits the same form of the left hand side of (*), while the right hand side of (*) can be viewed as an integral of a joint density $e^{-\omega \nu^{2} / 2} p_{\mathrm{PG}}(\omega \mid b, 0)$. Moreover, if we can represent this joint density as a factorized expression with $p_{\mathrm{PG}}(\omega \mid b, 0)$, the resulting factor will adopt the form $e^{-\omega \nu^{2} / 2}$, enabling manipulation into a Gaussian distribution. This observation inspires us to 
+express  $\psi\left(x_{t}, z_{t+1}\right)$ as a marginal of $\psi\left(x_{t}, z_{t+1}, \omega \right)$, which is a factor defined on the augmented space, $\psi\left(x_{t}, z_{t+1}, \omega_{t}\right)$, where $\omega_{t} \in \mathbb{R}_{+}^{K-1}$ is a vector of auxiliary variables. In particular, we choose the auxiliary variables as $\prob(\omega_{t, k} \mid x_{t}, z_{t+1}) \sim \mathrm{PG}\left(\mathbb{I}\left[z_{t+1} \geq k\right], \nu_{t+1, k}\right)$. Then,  we have $\psi\left(x_{t}, z_{t+1}, \omega_{t}\right) \propto \prod_{k=1}^{K-1} \exp \left\{\kappa_{t+1, k} \nu_{t+1, k}-\frac{1}{2} \omega_{t, k} \nu_{t+1, k}^{2}\right\}$, where $\kappa_{t+1, k}=\mathbb{I}\left[z_{t+1}=k\right]-\frac{1}{2} \mathbb{I}\left[z_{t+1} \geq k\right]$. Recalling that $\nu_{t+1}$ is a linear function of $x_{t}$, 
+$$
+\psi\left(x_{t}, z_{t+1}, \omega_{t}\right) \propto \mathcal{N}\left(\nu_{t+1} \mid \Omega_{t}^{-1} \kappa_{t+1}, \Omega_{t}^{-1}\right),
+$$
+with $\Omega_{t}=\operatorname{diag}\left(\omega_{t}\right)$ and $\kappa_{t+1}=\left[\kappa_{t+1,1} \ldots, \kappa_{t+1, K-1}\right]$. 
 
-
-\textcolor{red}{Differences in fitting SLDS vs rSLDS}
-in MCMC , in message passing, no more closed form 
-\textcolor{red}{Talk about stick-breaking ... and Polya-gamma ...}
-stickbreaking
-stickbreakin gto model the dependcnce of z on x
-polygamma
-
-The recurrence weights are also conjugate under a MNIW prior, given the auxiliary variables $\omega_{1: T}$. W
-
-
+Thus, after augmentation, the potentials on $x_{t}$ becomes Gaussian, allowing the integrals required for message passing to be written analytically. As a result, the Gibbs sampling of $\{x_t\}_{t=1:T}$ can be performed efficiently. Meanwhile, in each iteration of Gibbs sampling, an additional step is needed to sample the auxiliary variables by $\omega_{t, k} \mid x_{t}, z_{t+1} \sim \mathrm{PG}\left(\mathbb{I}\left[z_{t+1} \geq k\right], \nu_{t+1, k}\right)$. Finally, the recurrence weights, which are introduced to model the dependence of $z$ on $x$, are also conjugate under a MNIW prior, given the auxiliary variables $\omega_{1: T}$. This conjugate pair ensures the efficient sampling of the paramters $\theta$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

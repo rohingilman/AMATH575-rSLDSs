@@ -25,11 +25,33 @@ Setting $x_t$ and $y_t$ equal to zero, we find that the Van der Pol oscillator h
 
 To fit the Van der Pol oscillator to the rSLDS model, we use an ODE solver to generate data from the Lorenz system at a fixed initial condition $(x,y) = (0,2)$ and $t \in [0,1000]$ using $10000$ observations. To study how the model handles bifurcations, we sample the trajectory when $\mu = -1,0,1$ which are around and on the bifurcation. The true trajectories that are used to train the model can be seen in figure \ref{trueVDP}. Once again, we enhance the realism of our data by adding Gaussian noise. In the $\mu = 1$ case, we expect a stable limit cycle that has two prominent states and thus we construct the model using two discrete states. For the sake of consistency, we set the model to have two discrete states for each $\mu$ value. 
 
-By fitting and training an rSLDS model for each $\mu$ value using the BBVI and Laplace EM methods, we recover the trajectories of the original system which are presented in figure \textcolor{red}{ADD FIGURE OF BAD CASE}. Note that while we ran the model for both the Laplace EM and BBVI methods, we omit the latter as we are only illustrating the issue when $\mu=-1$. While the rSLDS model was able to recover the trajectories for the $\mu=0,1$ case, the model failed to rediscover the behavior at $\mu = -1$. To handle this, we turn down the amount of Gaussian noise being added to the observations. Retraining the model we recover the dynamics of the $\mu = -1$ as seen in \textcolor{red}{ADD FIGURE OF GOOD CASE}. When comparing the results to the true trajectories, we see that for each $\mu$ value, the rSLDS models using Laplace EM and BBVI are both able to accurately recover the behavior of the Van der Pol system near the bifurcation. When $\mu = 1$, both models identify two latent states exceptionally well. In the $\mu = 0$ case, although the BBVI method struggles to identify the latent states, the Laplace EM model identifies one latent state for the entire trajectory. On the other hand, when $\mu = -1$ both methods struggle to identify the latent states.
+By fitting and training an rSLDS model for each $\mu$ value using the BBVI and Laplace EM methods, we recover the trajectories of the original system which are presented in figure \ref{badvdp}. While the rSLDS model was able to recover the trajectories for the $\mu=0,1$ case, the model failed to rediscover the behavior at $\mu = -1$. To handle this, we turn down the amount of Gaussian noise being added to the observations. Retraining the model we recover the dynamics of the $\mu = -1$ as seen in figure \ref{goodvdp}. When comparing the results to the true trajectories, we see that for each $\mu$ value, the rSLDS models using Laplace EM and BBVI are both able to accurately recover the behavior of the Van der Pol system near the bifurcation. When $\mu = 1$, both models identify two latent states exceptionally well. In the $\mu = 0$ case, although the BBVI method struggles to identify the latent states by overlapping the latent states, the Laplace EM model identifies one latent state for the entire trajectory. On the other hand, when $\mu = -1$ both methods struggle to identify the latent states.
 
-%\subsection{R\"ossler Attractor}
-
-
+\begin{figure}
+    \begin{subfigure}[b]{0.33\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{./Figures/vdp-bad-mu1.png}
+        \caption{}
+        \label{badvdp:a}
+        \vspace{4ex}
+    \end{subfigure}%%
+    \begin{subfigure}[b]{0.33\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{./Figures/vdp-bad-mu0.png}
+        \caption{}
+        \label{badvdp:b}
+        \vspace{4ex}
+    \end{subfigure}%%
+    \begin{subfigure}[b]{0.33\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{./Figures/vdp-bad-mu-1.png}
+        \caption{}
+        \label{badvdp:c}
+        \vspace{4ex}
+    \end{subfigure}
+    \caption{\textcolor{red}{ADD CAPTIONS}}
+    \label{badvdp}
+\end{figure}
 
 \subsection{Bautin Bifurcation}
 We extend our examination of bifurcations to see how the models handle a generalized Hopf bifurcation (\textcolor{red}{maybe Bautin Bifurcation references}). Consider the autonomous system of ordinary differential equations
@@ -45,9 +67,68 @@ where $y = (y_1,y_2)^T \in \R^2$ are the spatial coordinates and the system depe
 \end{equation}
 which is the normal form of the Bautin bifurcation. Here $\sigma = \pm 1$ is related to the sign of the first Lypanonuv coefficient. 
 
+\begin{figure}
+    \begin{subfigure}[b]{0.33\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{./Figures/vdp-good-mu1.png}
+        \caption{}
+        \label{goodvdp:a}
+        \vspace{4ex}
+    \end{subfigure}%%
+    \begin{subfigure}[b]{0.33\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{./Figures/vdp-good-mu0.png}
+        \caption{}
+        \label{goodvdp:b}
+        \vspace{4ex}
+    \end{subfigure}%%
+    \begin{subfigure}[b]{0.33\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{./Figures/vdp-good-mu-1.png}
+        \caption{}
+        \label{goodvdp:c}
+        \vspace{4ex}
+    \end{subfigure}
+    \caption{\textcolor{red}{ADD CAPTIONS}}
+    \label{goodvdp}
+\end{figure}
+
 For the work of the paper, we will consider $\dot{y}$ to be the normal form of the Bautin bifurcation and observe how the system handles the three following behaviors around the bifurcation point. When $\beta_1,\beta_2 < 0$, the origin is stable with an unstable limit cycle around it. When $\beta_1,\beta_2 > 0$, the fixed point becomes stable and the limit cycle around unstable. In the specific subregion of $-1/4 \beta_2^2 < \beta_1 < 0$ and $\beta_2>0$, a second limit cycle emerges around the stable fixed point. The outer limit cycle is stable while the inner limit cycle is unstable. We demonstrate this behavior in figure \textcolor{red}{FIGURE OF TRUE}. On the left, $\beta_1 = \beta_2 < 0$ and the trajectory spirals into the stable fixed point and away from the unstable limit cycle. In the middle $\beta_1 = \beta_2 > 0$ and the trajectory travels to the stable limit cycle away from the unstable fixed point. On the right, $\beta_1 = -1/4 \beta_2^2$ and $\beta_2 > 0$ and we see the trajectory spiraling away from the unstable limit cycle into the stable limit cycle. 
 
-To fit the Bautin system to the rSLDS model, we follow the same procedure as outlined for the Van der Pol. We will once again use an ODE solver on $\dot{y}$ for a fixed initial condition $(y_1,y_2) = (0,0.55)$ and $t\in[0,1000]$ using 10000 observations to create the sample data for the model. We used parameter values $(\beta_1,\beta_2) \in \left\{(-0.1,-0.1),(0.2,0.2),\left(-1/2,\sqrt{2}\right)\right\}$ which are near the Bautin bifurcation to get the true trajectories seen in \textcolor{red}{FIGURE OF TRUTH}. Note that once again, the amount of noise added to the system is reduced to help the rSLDS model rediscover the dynamics. Fitting the rSLDS model using BBVI and Laplace EM, both methods recover the dynamics near the bifurcation point up to an affine transformation as seen in \text{red}{FIGURE OF RESULTS}. When $(\beta_1,\beta_2) = (-0.1,-0.1)$, both methods capture the dynamics of the stable fixed point although the BBVI results are less smooth. When $(\beta_1,\beta_2) = (0.2,0.2)$, both methods recover the stable limit cycle. Finally, when $(\beta_1,\beta_2) = (-1/2,\sqrt{2})$, both methods show the presence of an unstable limit cycle within a stable limit cycle. In each of the cases, both the Laplace EM and BBVI methods struggled to place two latent spaces and so we omitted the colors of the different states from the figure.  
+To fit the Bautin system to the rSLDS model, we follow the same procedure as outlined for the Van der Pol. We will once again use an ODE solver on $\dot{y}$ for a fixed initial condition $(y_1,y_2) = (0,0.55)$ and $t\in[0,1000]$ using 10000 observations to create the sample data for the model. We used parameter values $(\beta_1,\beta_2) \in \left\{(-0.1,-0.1),(0.2,0.2),\left(-1/2,\sqrt{2}\right)\right\}$ which are near the Bautin bifurcation to get the true trajectories seen in \textcolor{red}{FIGURE OF TRUTH}. Note that once again, the amount of noise added to the system is reduced to help the rSLDS model rediscover the dynamics. Fitting the rSLDS model using BBVI and Laplace EM, both methods recover the dynamics near the bifurcation point up to an affine transformation as seen in figure \ref{bautinresults}. When $(\beta_1,\beta_2) = (-0.1,-0.1)$, both methods capture the dynamics of the stable fixed point although the BBVI results are less smooth. When $(\beta_1,\beta_2) = (0.2,0.2)$, both methods recover the stable limit cycle. Finally, when $(\beta_1,\beta_2) = (-1/2,\sqrt{2})$, both methods show the presence of an unstable limit cycle within a stable limit cycle. In each of the cases, both the Laplace EM and BBVI methods struggled to place two latent spaces and so we omitted the colors of the different states from the figure.  
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth,height=\textwidth,keepaspectratio]{./Figures/bautin-true.png}
+    \caption{\textcolor{red}{ADD CAPTION}}
+    \label{fig}
+\end{figure}
 
 \subsection{Remarks}
 For both the methods, Laplace EM and BBVI, of the rSLDS model, the model accurately rediscovers the local dynamics near and on the bifurcation point but struggles to place two latent states in meaningful positions. More specially, fitting the model to the Van der Pol oscillator near the Hopf bifurcation highlights how the Laplace EM method outperforms the BBVI method at smoothly recreating the dynamics of the trajectory. Here the Laplace EM method is also able to place meaningful latent states for two of the cases near the bifurcation. Fitting the model to the Bautin system once again shows that the Laplace method outperforms the BBVI. Nevertheless, in both situations, the rSLDS model is only able to fit the dynamics of the model accurately when there is a low amount of noise present in the observation data. (\textcolor{red}{maybe this just goes into the conclusion})
+
+\begin{figure}
+    \begin{subfigure}[b]{0.33\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{./Figures/bautin-stable.png}
+        \caption{}
+        \label{bautinresults:a}
+        \vspace{4ex}
+    \end{subfigure}%%
+    \begin{subfigure}[b]{0.33\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{./Figures/bautin-unstab.png}
+        \caption{}
+        \label{bautinresults:b}
+        \vspace{4ex}
+    \end{subfigure}%%
+    \begin{subfigure}[b]{0.33\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{./Figures/bautin-lpc.png}
+        \caption{}
+        \label{bautinresults:c}
+        \vspace{4ex}
+    \end{subfigure}
+    \caption{\textcolor{red}{ADD CAPTIONS}}
+    \label{bautinresults}
+\end{figure}

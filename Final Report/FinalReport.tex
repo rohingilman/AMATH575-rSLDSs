@@ -5,6 +5,9 @@
 \usepackage{packages} % Look here for packages before you add more, place all figures in Figures folder
 \usepackage{macros} % Check here for macros before you add more
 
+\usepackage{hyperref}
+\usepackage{pdfpages}
+
 
 \newcommand{\prob}{\mathbb{P}} % Probabliity symbol
 \newcommand{\iid}{\overset{\mathrm{iid}}{\sim}} % IID symbol
@@ -21,13 +24,13 @@
 \end{comment}
 
 \title{Recurrent Switching Linear Dynamical Systems}
-\author{Charbel Abi Younes, Marvyn Bailly, Bart Boom, Rohin Gilman, Daran Xu}
+\author{Charbel Abi Younes \and Marvyn Bailly \and Bart Boom \and Rohin Gilman \and Daran Xu}
 \date{}
 
 \begin{document}
 
 \begin{abstract}
-	\textcolor{red}{Write this last}
+	We investigate the modeling of complex dynamical systems using switching linear dynamical systems and recurrent switching linear dynamical systems. The literature shows that this method is able to estimate complex nonlinear dynamics, with an increase in performance by extending the SLDS to recurrent SLDS. The goal of this paper is to investigate if this model is able to capture the behavior of bifurcations effectively. To investigate this we take a look at different systems where we know the dynamics. 
 \end{abstract}
 
 \maketitle
@@ -38,16 +41,21 @@
 
 \input{novel_results}
 
-\section{Conclusion}
+\input{Conclusion}
 
-\section{References}
+\nocite{linderman_bayesian_2017, zoltowski_unifying_2020, chen_estimating_2015, blei_variational_2017, linderman_dependent_2015}
+\bibliographystyle{plain}
+\bibliography{bibfile}
 
-\textcolor{red}{Linderman paper, Blei paper, Zoltowski paper}
-
+\pagebreak
 \section{Appendix}
 
-\textcolor{red}{Attach all code here}
+All the code used to generate the figures in this report can be found here: 
 
-\textcolor{red}{Attach article to the end of the pdf}
+\href{https://github.com/rohingilman/AMATH575-rSLDSs}{https://github.com/rohingilman/AMATH575-rSLDSs}
+
+\pagebreak
+
+\includepdf[pages=-]{linderman17a.pdf}
 
 \end{document}

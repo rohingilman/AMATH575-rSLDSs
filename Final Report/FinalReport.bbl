@@ -1,0 +1,41 @@
+\begin{thebibliography}{1}
+
+\bibitem{blei_variational_2017}
+David~M. Blei, Alp Kucukelbir, and Jon~D. McAuliffe.
+\newblock Variational {Inference}: {A} {Review} for {Statisticians}.
+\newblock {\em Journal of the American Statistical Association},
+  112(518):859--877, April 2017.
+\newblock arXiv:1601.00670 [cs, stat].
+
+\bibitem{linderman_bayesian_2017}
+Scott Linderman, Matthew Johnson, Andrew Miller, Ryan Adams, David Blei, and
+  Liam Paninski.
+\newblock Bayesian {Learning} and {Inference} in {Recurrent} {Switching}
+  {Linear} {Dynamical} {Systems}.
+\newblock In {\em Proceedings of the 20th {International} {Conference} on
+  {Artificial} {Intelligence} and {Statistics}}, pages 914--922. PMLR, April
+  2017.
+\newblock ISSN: 2640-3498.
+
+\bibitem{linderman_dependent_2015}
+Scott Linderman, Matthew~J Johnson, and Ryan~P Adams.
+\newblock Dependent {Multinomial} {Models} {Made} {Easy}: {Stick}-{Breaking}
+  with the {Polya}-gamma {Augmentation}.
+\newblock In {\em Advances in {Neural} {Information} {Processing} {Systems}},
+  volume~28. Curran Associates, Inc., 2015.
+
+\bibitem{chen_estimating_2015}
+J.~H. MacKe, L.~Buesing, and M.~Sahani.
+\newblock Estimating state and parameters in state space models of spike
+  trains.
+\newblock pages 137--159. Cambridge University Press, September 2015.
+\newblock Book Title: Advanced State Space Methods for Neural and Clinical Data
+  Edition: 1.
+
+\bibitem{zoltowski_unifying_2020}
+David~M. Zoltowski, Jonathan~W. Pillow, and Scott~W. Linderman.
+\newblock Unifying and generalizing models of neural dynamics during
+  decision-making, January 2020.
+\newblock arXiv:2001.04571 [q-bio, stat].
+
+\end{thebibliography}

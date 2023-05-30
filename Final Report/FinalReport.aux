@@ -2,10 +2,13 @@
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
 \HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
 \global\let\oldnewlabel\newlabel
 \gdef\newlabel#1#2{\newlabelxx{#1}#2}
 \gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
 \AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
 \let\newlabel\oldnewlabel
 \fi}
 \fi}
@@ -28,25 +31,28 @@
 \newlabel{trueNascar}{{2}{6}{True dynamics of synthetic NASCAR\relax }{figure.caption.2}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Generated states of fit data for synthetic NASCAR\relax }}{6}{figure.caption.3}\protected@file@percent }
 \newlabel{Nascargen}{{3}{6}{Generated states of fit data for synthetic NASCAR\relax }{figure.caption.3}{}}
+\citation{blei_variational_2017}
+\citation{zoltowski_unifying_2020}
+\citation{linderman_bayesian_2017}
 \citation{linderman_bayesian_2017}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Generated states of fit data for the Lorenz data\relax }}{7}{figure.caption.4}\protected@file@percent }
 \newlabel{Lorenzgen}{{4}{7}{Generated states of fit data for the Lorenz data\relax }{figure.caption.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\tocsubsection {}{1.6}{New Methods}}{7}{subsection.1.6}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\tocsection {}{2}{Reproduction of Results in the Paper}}{7}{section.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\tocsubsection {}{2.1}{Synthetic NASCAR}}{7}{subsection.2.1}\protected@file@percent }
 \citation{linderman_bayesian_2017}
 \citation{linderman_bayesian_2017}
+\@writefile{toc}{\contentsline {subsection}{\tocsubsection {}{2.1}{Synthetic NASCAR}}{8}{subsection.2.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Exact trajectories of the Nascar model and the evolution of observations during the first 1000 time steps. The true dynamics switch between four states which are indicated by different colors.\relax }}{8}{figure.caption.5}\protected@file@percent }
 \newlabel{trueNascar}{{5}{8}{Exact trajectories of the Nascar model and the evolution of observations during the first 1000 time steps. The true dynamics switch between four states which are indicated by different colors.\relax }{figure.caption.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\tocsubsection {}{2.2}{Lorenz system}}{8}{subsection.2.2}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Generated trajectories of the Nascar model using rSLDS with both BBVI and Laplace EM.\relax }}{9}{figure.caption.6}\protected@file@percent }
 \newlabel{generatedNascar}{{6}{9}{Generated trajectories of the Nascar model using rSLDS with both BBVI and Laplace EM.\relax }{figure.caption.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Qualitative behavior of the Lorenz system and comparison between true and generated states.\relax }}{9}{figure.caption.7}\protected@file@percent }
-\newlabel{lorenz}{{7}{9}{Qualitative behavior of the Lorenz system and comparison between true and generated states.\relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\tocsubsection {}{2.2}{Lorenz system}}{9}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\tocsection {}{3}{Novel Results}}{9}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\tocsubsection {}{3.1}{Van der Pol Oscillator}}{9}{subsection.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Qualitative behavior of the Lorenz system and comparison between true and generated states.\relax }}{10}{figure.caption.7}\protected@file@percent }
+\newlabel{lorenz}{{7}{10}{Qualitative behavior of the Lorenz system and comparison between true and generated states.\relax }{figure.caption.7}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces True trajectories used to fit rSLDS model over $T\in [0,1000]$ with $1000$ observations. The initial condition of $(0,2.2)$ can be seen in red. On the left, $\mu =1$ and the stable limit cycle can be seen. In the middle, $\mu = 0$ and the fixed point is a center. On the right, $\mu = -1$ and the fixed point is stable.\relax }}{10}{figure.caption.8}\protected@file@percent }
 \newlabel{trueVDP}{{8}{10}{True trajectories used to fit rSLDS model over $T\in [0,1000]$ with $1000$ observations. The initial condition of $(0,2.2)$ can be seen in red. On the left, $\mu =1$ and the stable limit cycle can be seen. In the middle, $\mu = 0$ and the fixed point is a center. On the right, $\mu = -1$ and the fixed point is stable.\relax }{figure.caption.8}{}}
-\@writefile{toc}{\contentsline {section}{\tocsection {}{3}{Novel Results}}{10}{section.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\tocsubsection {}{3.1}{Van der Pol Oscillator}}{10}{subsection.3.1}\protected@file@percent }
 \newlabel{badvdp:a}{{9a}{11}{\relax }{figure.caption.9}{}}
 \newlabel{sub@badvdp:a}{{a}{11}{\relax }{figure.caption.9}{}}
 \newlabel{badvdp:b}{{9b}{11}{\relax }{figure.caption.9}{}}
@@ -86,3 +92,9 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Recovered trajectories from the rSLDS model using the Laplace-EM and BBVI methods with a low amount of Gaussian noise present. In (A), $\beta _1 = \beta _2 = -0.1$ and the Laplace-EM method smoothly recovers the true trajectory while the BBVI recovers a trajectory with noise. In (B), $\beta _1 = \beta _2 = 0.2$ and both methods perform similarly to (A). Note that once again it can be seen that the BBVI has more noise due to the variance (thickness of the line) of the limit cycle. In (C) $\beta _1 = -1/2$ and $\beta _2 = \sqrt  {2}$ and the same results from (A) and (B) occur.\relax }}{15}{figure.caption.12}\protected@file@percent }
 \newlabel{bautinresults}{{12}{15}{Recovered trajectories from the rSLDS model using the Laplace-EM and BBVI methods with a low amount of Gaussian noise present. In (A), $\beta _1 = \beta _2 = -0.1$ and the Laplace-EM method smoothly recovers the true trajectory while the BBVI recovers a trajectory with noise. In (B), $\beta _1 = \beta _2 = 0.2$ and both methods perform similarly to (A). Note that once again it can be seen that the BBVI has more noise due to the variance (thickness of the line) of the limit cycle. In (C) $\beta _1 = -1/2$ and $\beta _2 = \sqrt {2}$ and the same results from (A) and (B) occur.\relax }{figure.caption.12}{}}
 \@writefile{toc}{\contentsline {section}{\tocsection {}{5}{Appendix}}{16}{section.5}\protected@file@percent }
+\newlabel{tocindent-1}{0pt}
+\newlabel{tocindent0}{12.7778pt}
+\newlabel{tocindent1}{17.77782pt}
+\newlabel{tocindent2}{29.38873pt}
+\newlabel{tocindent3}{0pt}
+\gdef \@abspage@last{25}

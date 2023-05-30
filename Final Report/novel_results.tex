@@ -106,18 +106,15 @@ For the work of the paper, we will consider $\dot{y}$ to be the normal form of t
 
 To fit the Bautin system to the rSLDS model, we follow the same procedure as outlined for the Van der Pol. We will once again use an ODE solver on $\dot{y}$ for a fixed initial condition $(y_1,y_2) = (0,0.55)$ and $t\in[0,1000]$ using 10000 observations to create the sample data for the model. We used parameter values $(\beta_1,\beta_2) \in \left\{(-0.1,-0.1),(0.2,0.2),\left(-1/2,\sqrt{2}\right)\right\}$ which are near the Bautin bifurcation to get the true trajectories seen in Figure \ref{bautin-true}. Note that once again, the amount of noise added to the system is reduced to help the rSLDS model rediscover the dynamics. Fitting the rSLDS model using BBVI and Laplace EM, both methods recover the dynamics near the bifurcation point up to an affine transformation as seen in Figure \ref{bautinresults}. When $(\beta_1,\beta_2) = (-0.1,-0.1)$, both methods capture the dynamics of the stable fixed point although the BBVI results are less smooth. When $(\beta_1,\beta_2) = (0.2,0.2)$, both methods recover the stable limit cycle. Finally, when $(\beta_1,\beta_2) = (-1/2,\sqrt{2})$, both methods show the presence of an unstable limit cycle within a stable limit cycle. In each of the cases, both the Laplace EM and BBVI methods struggled to place two latent spaces and so we omitted the colors of the different states from the figure.  
 
-\subsection{Remarks}
-For both the methods, Laplace EM and BBVI, of the rSLDS model, the model accurately rediscovers the local dynamics near and on the bifurcation point but struggles to place two latent states in meaningful positions. More specially, fitting the model to the Van der Pol oscillator near the Hopf bifurcation highlights how the Laplace EM method outperforms the BBVI method at smoothly recreating the dynamics of the trajectory. Here the Laplace EM method is also able to place meaningful latent states for two of the cases near the bifurcation. Fitting the model to the Bautin system once again shows that the Laplace method outperforms the BBVI. Nevertheless, in both situations, the rSLDS model is only able to fit the dynamics of the model accurately when there is a low amount of noise present in the observation data.
-
 \begin{figure}
-    \begin{subfigure}[b]{0.33\linewidth}
+    \begin{subfigure}[b]{0.333\linewidth}
         \centering
         \includegraphics[width=\linewidth]{./Figures/bautin-stable.png}
         \caption{}
         \label{bautinresults:a}
         \vspace{4ex}
     \end{subfigure}%%
-    \begin{subfigure}[b]{0.33\linewidth}
+    \begin{subfigure}[b]{0.309\linewidth}
         \centering
         \includegraphics[width=\linewidth]{./Figures/bautin-unstab.png}
         \caption{}
@@ -134,3 +131,7 @@ For both the methods, Laplace EM and BBVI, of the rSLDS model, the model accurat
     \caption{Recovered trajectories from the rSLDS model using the Laplace-EM and BBVI methods with a low amount of Gaussian noise present. In (A), $\beta_1 = \beta_2 = -0.1$ and the Laplace-EM method smoothly recovers the true trajectory while the BBVI recovers a trajectory with noise. In (B), $\beta_1 = \beta_2 = 0.2$ and both methods perform similarly to (A). Note that once again it can be seen that the BBVI has more noise due to the variance (thickness of the line) of the limit cycle. In (C) $\beta_1 = -1/2$ and $\beta_2 = \sqrt{2}$ and the same results from (A) and (B) occur.}
     \label{bautinresults}
 \end{figure}
+
+\subsection{Remarks}
+For both the methods, Laplace EM and BBVI, of the rSLDS model, the model accurately rediscovers the local dynamics near and on the bifurcation point but struggles to place two latent states in meaningful positions. More specially, fitting the model to the Van der Pol oscillator near the Hopf bifurcation highlights how the Laplace EM method outperforms the BBVI method at smoothly recreating the dynamics of the trajectory. Here the Laplace EM method is also able to place meaningful latent states for two of the cases near the bifurcation. Fitting the model to the Bautin system once again shows that the Laplace method outperforms the BBVI. Nevertheless, in both situations, the rSLDS model is only able to fit the dynamics of the model accurately when there is a low amount of noise present in the observation data.
+

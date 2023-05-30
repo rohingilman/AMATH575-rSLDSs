@@ -52,7 +52,7 @@ The most common way to perform Bayesian inference is to use Gibbs sampling, whic
   \item Sample $\{z_t\}$ from $\prob(\{z_{t}\}_{t=1:T} \mid \{x_t\}_{t=1:T}, \theta)$
  \item Repeat steps (1-3) 
 \end{enumerate}
-The parameters sampling can be efficiently performed by the choosing appropriate prior distrbutions, to ensure the posterior has a closed-form expression, forming a conjugate pair between the prior and the posterior.
+The parameters sampling step can be efficiently performed by choosing appropriate prior distrbutions, to ensure the posterior has a closed-form expression, forming a conjugate pair between the prior and the posterior.
  
 For simplicity, $C, S$, and $d$ are assumed to be same for all discrete states. To perform Bayesian inference efficiently, we assume conjugate Dirichlet priors for each row of the transition matrix $\pi_{k}$, and conjugate matrix normal inverse Wishart (MNIW) priors for the dynamical system parameters $\left(A_{k}, b_{k}\right), Q_{k}$:
 $$
@@ -68,7 +68,7 @@ Given the samples latent states and observations, the posterior $\prob(\theta \m
 
 Meanwhile, to obtain conditional samples of $\{x_t\}$ from $\prob(\{x_{t}\}_{t=1:T} \mid \{z_t\}_{t=1:T}, \theta)$, and $\{z_t\}$ from $\prob(\{z_{t}\}_{t=1:T} \mid \{x_t\}_{t=1:T}, \theta)$, one can use the message passing algorithm.
 
-We start with considering the  conditional  density  of  the  latent continuous  state  sequence $x_{1:T}$ given  all  other  variables. Here we introduce the notation of potential: $\psi$ maps two states or three to a nonnegative value, such that $\psi(x_t,y_t)\propto \prob(y_t \mid x_t)$ and $\psi(x_t,x_{t+1},z_{t+1})\propto \prob(x_{t+1} \mid x_t,z_{t+1})$. This notation allows us to manipulate the conditional probability and the joint probability without worrying about the normalization terms. Following this notation and the graphical model of SLDS, the conditional density of $x_{1:T}$ can be expressed as $
+We start with considering the  conditional  density  of  the  latent continuous  state  sequence $x_{1:T}$ given  all  other  variables. Here we introduce the notation of potential: $\psi$ maps two states or three to a nonnegative value $\psi$, such that $\psi(x_t,y_t)\propto \prob(y_t \mid x_t)$ and $\psi(x_t,x_{t+1},z_{t+1})\propto \prob(x_{t+1} \mid x_t,z_{t+1})$. This notation allows us to manipulate the conditional probability and the joint probability without worrying about the normalization terms. Following this notation and the graphical model of SLDS, the conditional density of $x_{1:T}$ can be expressed as $
 \prod_{t=1}^{T-1} \psi\left(x_{t}, x_{t+1}, z_{t+1}\right) \psi\left(x_{t}, z_{t+1}\right) \prod_{t=1}^{T} \psi\left(x_{t}, y_{t}\right),
 $
 
@@ -76,7 +76,7 @@ $
 %\[m_{ji}(x_i) = \sum_{x_j} \psi_{ij}(x_i, x_j) \prod_{k \in \eta(j) \backslash \{i\}} m_{kj}(x_j)\]
  
 %For the initial state $x_0$, we set $m_{0 \rightarrow 1}(x_1)=\psi(x_1,y_1)?????$. 
-For $t\geq 2$,the message from time $t$ to time $t+1$, deonted $m_{t \rightarrow t+1}(x_{t+1})$, is computed as 
+For $t\geq 2$,the message from time $t$ to time $t+1$, deonted as $m_{t \rightarrow t+1}(x_{t+1})$, is computed by 
 $ m_{t \rightarrow t+1}(x_{t+1})=\int \psi(x_t,y_t) \psi(x_t,x_{t+1},z_{t+1}) m_{t-1 \rightarrow t}(x_t) dx_t $. The paper does not clarify how to define the initial message $m_{0 \rightarrow 1}(x_1)$. I propose defining it as $m_{0 \rightarrow 1}(x_1)=\psi\left(x_{1}, z_{1}\right) \psi\left(x_{1}, y_{1}\right)$. Given that $x_{1:T}$ is  conditionally Gaussian given $z_{1:T}$ and $y_{1:T}$, these message passing integrasl will have closed forms, allowing us to perform forward propagation to evaluate $m_{0 \rightarrow 1}(x_1), m_{1 \rightarrow 2}(x_2),\dots, m_{T-1 \rightarrow T}(x_T)$. After that, one can perform the sampling of $\{x_t\}_{t=1:T}$ in a backward manner: 
 \begin{itemize}
   \item Sample $x_T$ from $m_{T-1 \rightarrow T}(x_T)$, $z_{1:T}$ and $y_{1:T}$

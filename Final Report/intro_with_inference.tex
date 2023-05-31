@@ -76,8 +76,8 @@ $
 %\[m_{ji}(x_i) = \sum_{x_j} \psi_{ij}(x_i, x_j) \prod_{k \in \eta(j) \backslash \{i\}} m_{kj}(x_j)\]
  
 %For the initial state $x_0$, we set $m_{0 \rightarrow 1}(x_1)=\psi(x_1,y_1)?????$. 
-For $t\geq 2$,the message from time $t$ to time $t+1$, deonted as $m_{t \rightarrow t+1}(x_{t+1})$, is computed by 
-$ m_{t \rightarrow t+1}(x_{t+1})=\int \psi(x_t,y_t) \psi(x_t,x_{t+1},z_{t+1}) m_{t-1 \rightarrow t}(x_t) dx_t $. The paper does not clarify how to define the initial message $m_{0 \rightarrow 1}(x_1)$. We propose defining it as $m_{0 \rightarrow 1}(x_1)=\psi\left(x_{1}, z_{1}\right) \psi\left(x_{1}, y_{1}\right)$. Given that $x_{1:T}$ is  conditionally Gaussian given $z_{1:T}$ and $y_{1:T}$, these message passing integrasl will have closed forms, allowing us to perform forward propagation to evaluate $m_{0 \rightarrow 1}(x_1), m_{1 \rightarrow 2}(x_2),\dots, m_{T-1 \rightarrow T}(x_T)$. After that, one can perform the sampling of $\{x_t\}_{t=1:T}$ in a backward manner: 
+For $t\geq 2$,the message from time $t$ to time $t+1$, denoted as $m_{t \rightarrow t+1}(x_{t+1})$, is computed by 
+$ m_{t \rightarrow t+1}(x_{t+1})=\int \psi(x_t,y_t) \psi(x_t,x_{t+1},z_{t+1}) m_{t-1 \rightarrow t}(x_t) dx_t $. The paper does not clarify how to define the initial message $m_{0 \rightarrow 1}(x_1)$. We propose defining it as $m_{0 \rightarrow 1}(x_1)=\psi\left(x_{1}, z_{1}\right) \psi\left(x_{1}, y_{1}\right)$. Given that $x_{1:T}$ is  conditionally Gaussian given $z_{1:T}$ and $y_{1:T}$, these message passing integrals will have closed forms, allowing us to perform forward propagation to evaluate $m_{0 \rightarrow 1}(x_1), m_{1 \rightarrow 2}(x_2),\dots, m_{T-1 \rightarrow T}(x_T)$. After that, one can perform the sampling of $\{x_t\}_{t=1:T}$ in a backward manner: 
 \begin{itemize}
   \item Sample $x_T$ from $m_{T-1 \rightarrow T}(x_T)$, $z_{1:T}$ and $y_{1:T}$
   \item Sample $x_{T-1}$ from $m_{T-2 \rightarrow T-1}(x_{T-1})$ and the sampled $x_T$, $z_{1:T}$ and $y_{1:T}$

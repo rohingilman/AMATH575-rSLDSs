@@ -14,7 +14,7 @@ where $x$ is the spatial coordinates and $\mu$ is a scalar parameter. The equati
         y_t = \mu(1-x^2)y - x.
     \end{cases}
 \]
-Setting $x_t$ and $y_t$ equal to zero, we find that the Van der Pol oscillator has a fixed point at the origin $(x,y) = (0,0)$ which is known to be a Hopf bifurcation. This means that the stability of the fixed point is stable for $\mu < 0$ and there are no limit cycles near the fixed point. When $\mu = 0$, the Van der Pol system becomes linear and the origin is a circular node. Lastly, when $\mu > 0$, the fixed point becomes unstable and a stable limit cycle around the origin appears. We demonstrate the different behaviors in Figure \ref{trueVDP}. On the left $\mu > 0$, the stable limit cycle around the fixed point can be seen. In the middle $\mu =0$, the trajectory forms a circle around the center node. On the right $\mu > 0$, the trajectory spirals into the stable fixed point. 
+Setting $x_t$ and $y_t$ equal to zero, we find that the Van der Pol oscillator has a fixed point at the origin $(x,y) = (0,0)$ which is known to be a Hopf bifurcation. This means that the stability of the fixed point is stable for $\mu < 0$ and there are no limit cycles near the fixed point. When $\mu = 0$, the Van der Pol system becomes linear and the origin is a circular node. Lastly, when $\mu > 0$, the fixed point becomes unstable and a stable limit cycle around the origin appears. We demonstrate the different behaviors in Figure \ref{trueVDP}. On the left $\mu > 0$, the stable limit cycle around the fixed point can be seen. In the middle $\mu =0$, the trajectory forms a circle around the center node. On the right $\mu < 0$, the trajectory spirals into the stable fixed point. 
 
 \begin{figure}
     \centering
@@ -23,7 +23,7 @@ Setting $x_t$ and $y_t$ equal to zero, we find that the Van der Pol oscillator h
     \label{trueVDP}
 \end{figure}
 
-To fit the Van der Pol oscillator to the rSLDS model, we use an ODE solver to generate data from the Lorenz system at a fixed initial condition $(x,y) = (0,2)$ and $t \in [0,1000]$ using $10000$ observations. To study how the model handles bifurcations, we sample the trajectory when $\mu = -1,0,1$ which are around and on the bifurcation. The true trajectories that are used to train the model can be seen in Figure \ref{trueVDP}. Once again, we enhance the realism of our data by adding Gaussian noise. In the $\mu = 1$ case, we expect a stable limit cycle that has two prominent states and thus we construct the model using two discrete states. For the sake of consistency, we set the model to have two discrete states for each $\mu$ value. 
+To fit the Van der Pol oscillator to the rSLDS model, we use an ODE solver to generate data from the Van der Pol at a fixed initial condition $(x,y) = (0,2)$ and $t \in [0,1000]$ using $10000$ observations. To study how the model handles bifurcations, we sample the trajectory when $\mu = -1,0,1$ which are around and on the bifurcation. The true trajectories that are used to train the model can be seen in Figure \ref{trueVDP}. Once again, we enhance the realism of our data by adding Gaussian noise. In the $\mu = 1$ case, we expect a stable limit cycle that has two prominent states and thus we construct the model using two discrete states. For the sake of consistency, we set the model to have two discrete states for each $\mu$ value. 
 
 
 
@@ -60,7 +60,7 @@ We extend our examination of bifurcations to see how the models handle a general
 \[
     \dot{y} = f\paren{y, \beta},
 \]
-where $y = (y_1,y_2)^T \in \R^2$ are the spatial coordinates and the system depends upon $\beta = (\beta_1,\beta_2) \in \R^2$. Supposing the system has a fixed point on the origin, the fixed point is said to experience a generalized Hopf bifurcation known as a Bautin bifurcation if specific conditions upon the first and second Lypanonuv coefficients, the details are omitted as they are not deemed insightful to the paper. When these conditions are met, $\dot{y}$ is locally equivalent near the origin to 
+where $y = (y_1,y_2)^T \in \R^2$ are the spatial coordinates and the system depends upon $\beta = (\beta_1,\beta_2) \in \R^2$. Supposing the system has a fixed point on the origin, the fixed point is said to experience a generalized Hopf bifurcation known as a Bautin bifurcation if specific conditions upon the first and second Lypanonuv coefficients are met. The details are omitted as they are not deemed insightful to the paper. When these conditions are met, $\dot{y}$ is locally equivalent near the origin to 
 \[
     \begin{cases}
         \dot{y_1} = \beta_1 y_1 - y + \beta_2 y_1 \paren{y_1^2 + y^2} + \sigma y_1 \paren{y_1^2 + y^2}^2,\\

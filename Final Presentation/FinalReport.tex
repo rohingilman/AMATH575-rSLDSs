@@ -1,0 +1,57 @@
+\documentclass{amsart}
+
+\usepackage[top = 1in, bottom = 1in, left =1in, right = 1in]{geometry}
+
+\usepackage{packages} % Look here for packages before you add more, place all figures in Figures folder
+\usepackage{macros} % Check here for macros before you add more
+
+\usepackage{hyperref}
+\usepackage{pdfpages}
+
+
+\newcommand{\prob}{\mathbb{P}} % Probabliity symbol
+\newcommand{\iid}{\overset{\mathrm{iid}}{\sim}} % IID symbol
+
+\usepackage{setspace}
+	\doublespacing
+
+\begin{comment}
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	Add each section to a different tex file and use input to add content
+
+	See intro for a template
+	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+\end{comment}
+
+\title{Recurrent Switching Linear Dynamical Systems}
+\author{Charbel Abi Younes \and Marvyn Bailly \and Bart Boom \and Rohin Gilman \and Daran Xu}
+\date{}
+
+\begin{document}
+
+\begin{abstract}
+	We investigated the modeling of complex dynamical systems using switching linear dynamical systems and recurrent switching linear dynamical systems. The literature shows that this method is able to estimate complex nonlinear dynamics, with an increase in performance by extending the SLDS to recurrent SLDS. The goal of this paper was to investigated if this model is able to capture the behavior of bifurcations effectively. We studied two systems with different bifurcations, Van der Pol oscillator with a Hopf bifurcation and a Bautin bifurcation with a generalized Hopf bifurcation. It was found that rSLDS was able to capture the different dynamics before and after the bifurcation. However, different models have to be trained for each parameter value. The model is not able to predict when a bifurcation is going to occur. 
+\end{abstract}
+
+\maketitle
+
+\input{intro_with_inference}
+
+\input{reproduction}
+
+\input{novel_results}
+
+\input{Conclusion}
+
+\nocite{linderman_bayesian_2017, zoltowski_unifying_2020, chen_estimating_2015, blei_variational_2017, linderman_dependent_2015}
+\bibliographystyle{plain}
+\bibliography{bibfile}
+\section{Appendix}
+
+All the code used to generate the figures in this report can be found here: 
+
+\href{https://github.com/rohingilman/AMATH575-rSLDSs}{https://github.com/rohingilman/AMATH575-rSLDSs}
+
+\includepdf[pages=-]{linderman17a.pdf}
+
+\end{document}

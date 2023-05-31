@@ -77,7 +77,7 @@ $
  
 %For the initial state $x_0$, we set $m_{0 \rightarrow 1}(x_1)=\psi(x_1,y_1)?????$. 
 For $t\geq 2$,the message from time $t$ to time $t+1$, deonted as $m_{t \rightarrow t+1}(x_{t+1})$, is computed by 
-$ m_{t \rightarrow t+1}(x_{t+1})=\int \psi(x_t,y_t) \psi(x_t,x_{t+1},z_{t+1}) m_{t-1 \rightarrow t}(x_t) dx_t $. The paper does not clarify how to define the initial message $m_{0 \rightarrow 1}(x_1)$. I propose defining it as $m_{0 \rightarrow 1}(x_1)=\psi\left(x_{1}, z_{1}\right) \psi\left(x_{1}, y_{1}\right)$. Given that $x_{1:T}$ is  conditionally Gaussian given $z_{1:T}$ and $y_{1:T}$, these message passing integrasl will have closed forms, allowing us to perform forward propagation to evaluate $m_{0 \rightarrow 1}(x_1), m_{1 \rightarrow 2}(x_2),\dots, m_{T-1 \rightarrow T}(x_T)$. After that, one can perform the sampling of $\{x_t\}_{t=1:T}$ in a backward manner: 
+$ m_{t \rightarrow t+1}(x_{t+1})=\int \psi(x_t,y_t) \psi(x_t,x_{t+1},z_{t+1}) m_{t-1 \rightarrow t}(x_t) dx_t $. The paper does not clarify how to define the initial message $m_{0 \rightarrow 1}(x_1)$. We propose defining it as $m_{0 \rightarrow 1}(x_1)=\psi\left(x_{1}, z_{1}\right) \psi\left(x_{1}, y_{1}\right)$. Given that $x_{1:T}$ is  conditionally Gaussian given $z_{1:T}$ and $y_{1:T}$, these message passing integrasl will have closed forms, allowing us to perform forward propagation to evaluate $m_{0 \rightarrow 1}(x_1), m_{1 \rightarrow 2}(x_2),\dots, m_{T-1 \rightarrow T}(x_T)$. After that, one can perform the sampling of $\{x_t\}_{t=1:T}$ in a backward manner: 
 \begin{itemize}
   \item Sample $x_T$ from $m_{T-1 \rightarrow T}(x_T)$, $z_{1:T}$ and $y_{1:T}$
   \item Sample $x_{T-1}$ from $m_{T-2 \rightarrow T-1}(x_{T-1})$ and the sampled $x_T$, $z_{1:T}$ and $y_{1:T}$
@@ -139,10 +139,10 @@ for $k=1,2, \ldots, K-1$ and $\pi_{\mathrm{SB}}^{(K)}(\nu)=\prod_{k=1}^{K} \sigm
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Similar to SLDS, The fitting process of rSLDS is based on the Gibbs sampler. However, during the message passing stage, the message from time $t$ to time $t+1$, denoted $m_{t \rightarrow t+1}\left(x_{t+1}\right)$, is computed via
+Similar to SLDS, the fitting process of rSLDS is based on the Gibbs sampler. However, during the message passing stage, the message from time $t$ to time $t+1$, denoted $m_{t \rightarrow t+1}\left(x_{t+1}\right)$, is computed via
 
 $$
-\int \psi\left(x_{t}, y_{t}\right) \psi\left(x_{t}, z_{t+1}\right) \psi\left(x_{t}, x_{t+1}, z_{t+1}\right) m_{t-1 \rightarrow t}\left(x_{t}\right) \mathrm{d} x_{t}
+\int \psi\left(x_{t}, y_{t}\right) \psi\left(x_{t}, z_{t+1}\right) \psi\left(x_{t}, x_{t+1}, z_{t+1}\right) m_{t-1 \rightarrow t}\left(x_{t}\right) \mathrm{d} x_{t},
 $$ 
 where the inclusion of $\psi\left(x_{t}, z_{t+1}\right)$ accounts for the introduced dependence of $z_{t+1}$ on $x_t$.
 
@@ -150,17 +150,17 @@ With the previously defined stick-breaking function, one can derive the probabil
 $, where $\mathbb{I}[\cdot]$ denotes an indicator function that takes value 1 when its argument is true and 0 otherwise. Therefore, the conditional distribution is non-Gaussian and the potential $\psi\left(x_{t}, z_{t+1}\right)$ is not a linear Gaussian factor. Thus, the integral in the message computation is not available in closed form, which makes the sampling of the latent continuous states challenging. In this paper, the Polya-gamma augmentation \cite{linderman_dependent_2015} is used, which introduces an auxiliary variable.
 
 According to the stick breaking mapping, the non-Gaussian factor is
-$$\psi\left(x_{t}, z_{t+1}\right)=\prod_{k=1}^{K} \sigma\left(\nu_{t+1, k}\right)^{\mathbb{I}\left[z_{t+1}=k\right]} \sigma\left(-\nu_{t+1, k}\right)^{\mathbb{[}\left[z_{t+1}>k\right]}$$ where  $\nu_{t+1}$ is linear in $x_{t}$, and $\nu_{t+1, k}$ is the $k$-th dimension of $\nu_{t+1}$.  Expanding the definition of the logistic function, we have
+$$\psi\left(x_{t}, z_{t+1}\right)=\prod_{k=1}^{K} \sigma\left(\nu_{t+1, k}\right)^{\mathbb{I}\left[z_{t+1}=k\right]} \sigma\left(-\nu_{t+1, k}\right)^{\mathbb{[}\left[z_{t+1}>k\right]},$$ where  $\nu_{t+1}$ is linear in $x_{t}$, and $\nu_{t+1, k}$ is the $k$-th dimension of $\nu_{t+1}$.  Expanding the definition of the logistic function, we have
 $$
-\psi\left(x_{t}, z_{t+1}\right)=\prod_{k=1}^{K-1} \frac{\left(e^{\nu_{t+1, k}}\right)^{\mathbb{I}\left[z_{t+1}=k\right]}}{\left(1+e^{\nu_{t+1, k}}\right)^{\mathbb{I}\left[z_{t+1} \geq k\right]}} \quad (*)
+\psi\left(x_{t}, z_{t+1}\right)=\prod_{k=1}^{K-1} \frac{\left(e^{\nu_{t+1, k}}\right)^{\mathbb{I}\left[z_{t+1}=k\right]}}{\left(1+e^{\nu_{t+1, k}}\right)^{\mathbb{I}\left[z_{t+1} \geq k\right]}}, \quad (*)
 $$
 An integral identity exists for polya-gamma distribution, given by:
 $$
-\frac{\left(e^{\nu}\right)^{a}}{\left(1+e^{\nu}\right)^{b}}=2^{-b} e^{\kappa \nu} \int_{0}^{\infty} e^{-\omega \nu^{2} / 2} p_{\mathrm{PG}}(\omega \mid b, 0) \mathrm{d} \omega \quad(**)
+\frac{\left(e^{\nu}\right)^{a}}{\left(1+e^{\nu}\right)^{b}}=2^{-b} e^{\kappa \nu} \int_{0}^{\infty} e^{-\omega \nu^{2} / 2} p_{\mathrm{PG}}(\omega \mid b, 0) \mathrm{d} \omega, \quad(**)
 $$
 where $\kappa=a-b / 2$ and $p_{\mathrm{PG}}(\omega \mid b, 0)$ is the density of the Pólya-gamma distribution, PG $(b, 0)$, which does not depend on $\nu$.   
 
-Notice that the right hand side of (**) exhibits the same form of the left hand side of (*), while the right hand side of (*) can be viewed as an integral of a joint density $e^{-\omega \nu^{2} / 2} p_{\mathrm{PG}}(\omega \mid b, 0)$. Moreover, if we can represent this joint density as a factorized expression with $p_{\mathrm{PG}}(\omega \mid b, 0)$, the resulting factor will adopt the form $e^{-\omega \nu^{2} / 2}$, enabling manipulation into a Gaussian distribution. This observation inspires us to 
+Notice that the right hand side of $(**)$ exhibits the same form of the left hand side of $(*)$, while the right hand side of $(*)$ can be viewed as an integral of a joint density $e^{-\omega \nu^{2} / 2} p_{\mathrm{PG}}(\omega \mid b, 0)$. Moreover, if we can represent this joint density as a factorized expression with $p_{\mathrm{PG}}(\omega \mid b, 0)$, the resulting factor will adopt the form $e^{-\omega \nu^{2} / 2}$, enabling manipulation into a Gaussian distribution. This observation inspires us to 
 express  $\psi\left(x_{t}, z_{t+1}\right)$ as a marginal of $\psi\left(x_{t}, z_{t+1}, \omega \right)$, which is a factor defined on the augmented space, $\psi\left(x_{t}, z_{t+1}, \omega_{t}\right)$, where $\omega_{t} \in \mathbb{R}_{+}^{K-1}$ is a vector of auxiliary variables. In particular, we choose the auxiliary variables as $\prob(\omega_{t, k} \mid x_{t}, z_{t+1}) \sim \mathrm{PG}\left(\mathbb{I}\left[z_{t+1} \geq k\right], \nu_{t+1, k}\right)$. Then,  we have $\psi\left(x_{t}, z_{t+1}, \omega_{t}\right) \propto \prod_{k=1}^{K-1} \exp \left\{\kappa_{t+1, k} \nu_{t+1, k}-\frac{1}{2} \omega_{t, k} \nu_{t+1, k}^{2}\right\}$, where $\kappa_{t+1, k}=\mathbb{I}\left[z_{t+1}=k\right]-\frac{1}{2} \mathbb{I}\left[z_{t+1} \geq k\right]$. Recalling that $\nu_{t+1}$ is a linear function of $x_{t}$, 
 $$
 \psi\left(x_{t}, z_{t+1}, \omega_{t}\right) \propto \mathcal{N}\left(\nu_{t+1} \mid \Omega_{t}^{-1} \kappa_{t+1}, \Omega_{t}^{-1}\right),
@@ -188,7 +188,7 @@ The models performed reasonably well on the synthetic data. Figure \ref{trueNasc
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.35\textwidth]{paper_fig1.png}
-	\caption{True dynamics of synthetic NASCAR}
+	\caption{True dynamics of synthetic NASCAR.}
 	\label{trueNascar}
 \end{figure}
 
@@ -204,7 +204,7 @@ Figure \ref{Nascargen} shows the states generated by both the SLDS and rSLDS fit
 		\includegraphics[width=\textwidth]{paper_fig4.png}
 		\caption{rSLDS}
 	\end{subfigure}
-	\caption{Generated states of fit data for synthetic NASCAR}
+	\caption{Generated states of fit data for synthetic NASCAR.}
 	\label{Nascargen}
 \end{figure}
 
@@ -220,7 +220,7 @@ The next example the authors considered was a system generated by the Lorenz sys
 		\includegraphics[width=\textwidth]{paper_fig6.png}
 		\caption{rSLDS}
 	\end{subfigure}
-	\caption{Generated states of fit data for the Lorenz data}
+	\caption{Generated states of fit data for the Lorenz data.}
 	\label{Lorenzgen}
 \end{figure}
 

@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex FinalReport"] 1685476714 "FinalReport.aux" "FinalReport.bbl" "FinalReport" 1685476720
+["bibtex FinalReport"] 1685823056 "FinalReport.aux" "FinalReport.bbl" "FinalReport" 1685823063
   "C:/Users/Rohin Gilman/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/plain.bst" 1291868336 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "FinalReport.aux" 1685476719 13207 f29ead5692df848968e23d342649c2f9 "pdflatex"
+  "FinalReport.aux" 1685823062 13477 fa7d6782c36696045dbd74929c031ec9 "pdflatex"
   "bibfile.bib" 1685393292 9488 6b5de5616e2f17e323630679b11cdf62 ""
   (generated)
   "FinalReport.bbl"
   "FinalReport.blg"
-["pdflatex"] 1685476714 "c:/Users/Rohin Gilman/Documents/GitHub/AMATH575-rSLDSs/Final Report/FinalReport.tex" "FinalReport.pdf" "FinalReport" 1685476720
+["pdflatex"] 1685823057 "c:/Users/Rohin Gilman/Documents/GitHub/AMATH575-rSLDSs/Final Report/FinalReport.tex" "FinalReport.pdf" "FinalReport" 1685823063
   "C:/Users/Rohin" 1661101895 18975 1a3d2d0bd36f14d768ac8155a708220d ""
   "C:/Users/Rohin Gilman/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1685394249 115518 12727708efe1103296e4191777be1d34 ""
   "C:/Users/Rohin Gilman/AppData/Local/MiKTeX/fonts/pk/ljfour/public/esint/dpi600/esint10.pk" 1682872734 10544 6dd848fe6e8682dec6a5ab40c5b78105 ""
@@ -263,17 +263,17 @@
   "Figures/vdp-good-mu-1.png" 1685381874 42709 9a6d5ce99724245fab0a90602de8a5e8 ""
   "Figures/vdp-good-mu0.png" 1685381874 36336 9cd5f0e5259a37b61a31efc544cfe701 ""
   "Figures/vdp-good-mu1.png" 1685381874 37605 9442aed1ca658d303212509015d84718 ""
-  "FinalReport.aux" 1685476719 13207 f29ead5692df848968e23d342649c2f9 "pdflatex"
-  "FinalReport.bbl" 1685476714 1697 cb7043bc9ed6a7c8f2f927608d607c3a "bibtex FinalReport"
-  "FinalReport.out" 1685476719 2962 ca77da669888d1991beb225aa5aa9222 "pdflatex"
-  "FinalReport.tex" 1685476705 1997 ee5206797124c600b8e47f2ea4375414 ""
+  "FinalReport.aux" 1685823062 13477 fa7d6782c36696045dbd74929c031ec9 "pdflatex"
+  "FinalReport.bbl" 1685823057 1697 cb7043bc9ed6a7c8f2f927608d607c3a "bibtex FinalReport"
+  "FinalReport.out" 1685823062 2962 ca77da669888d1991beb225aa5aa9222 "pdflatex"
+  "FinalReport.tex" 1685823052 1985 1ce64a9029740045a8aae3b29f56894b ""
   "c:/Users/Rohin" 1661101895 18975 1a3d2d0bd36f14d768ac8155a708220d ""
-  "c:/Users/Rohin Gilman/Documents/GitHub/AMATH575-rSLDSs/Final Report/FinalReport.tex" 1685476705 1997 ee5206797124c600b8e47f2ea4375414 ""
+  "c:/Users/Rohin Gilman/Documents/GitHub/AMATH575-rSLDSs/Final Report/FinalReport.tex" 1685823052 1985 1ce64a9029740045a8aae3b29f56894b ""
   "figures/paper_fig10.png" 1685381874 38609 2fd087d6d90269cabf9b2cdcc9d3c509 ""
-  "intro_with_inference.tex" 1685476663 21785 47ccce84c7105c68318ab871cec19b0a ""
+  "intro_with_inference.tex" 1685822981 21891 cbbb90b8aa83c35c7f0c78fb184e272c ""
   "linderman17a.pdf" 1681426884 3511195 e5968f2ed90d41ddb572828d98755e47 ""
   "macros.sty" 1682036688 2374 ec13082f49ffc466a65b47d073b1d5c8 ""
-  "novel_results.tex" 1685476663 13227 8c56091563935185140b182050a9e540 ""
+  "novel_results.tex" 1685822981 13275 02c2063963f00eb1d3edcd8f1e9b5212 ""
   "packages.sty" 1684777756 880 0e656b0038217d3c56a0eb0e4abe4730 ""
   "reproduction.tex" 1685393900 4629 2f7a3f8a379caa5a853e8fd4488d2b1a ""
   (generated)
